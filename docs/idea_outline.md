@@ -6,7 +6,7 @@
 Lost & Found HWR
 
 *Contributors:*
-Nam Tung Vu, Suheib Al Rabti
+Nam Tung Vu, Suheib Abdolkadir Mohammed Saaid
 
 
 *Repository Link:*
