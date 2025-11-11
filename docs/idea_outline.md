@@ -86,9 +86,10 @@ Die Plattform dient als *neutrales Schwarzes Brett*:
 
 ### Umgang mit Konflikten
 Wenn mehrere Personen denselben Gegenstand beanspruchen:
-- Die Entscheidung liegt beim Finder.
-- In der App selbst erfolgt keine Verifizierung – das wird bewusst offengelassen.
-- Später könnte ein optionales „Verifizierungsfeld“ hinzukommen (z. B. Beschreibung von Details).
+- Fokus auf Kontaktdaten:
+- Anbieten von direkten Kontaktmöglichkeiten: Anzeigen einer E-Mail-Adresse oder Telefonnummer (mit Einverständnis).
+- Empfehlung für Beweisfragen:
+- Hinweis in der App: Text einblenden (z.B. im FAQ): "Wenn sich mehrere Personen melden, fragen Sie nach spezifischen Merkmalen des Gegenstands, die nur der wahre Besitzer kennen kann".
 
 ---
 
