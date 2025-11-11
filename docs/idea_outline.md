@@ -102,8 +102,8 @@ Wenn mehrere Personen denselben Gegenstand beanspruchen:
   - Einfacher Suche/Filterfunktion
 
 *Individuelle Ziele:*
-- *Suheib:* Frontend (React), UI-Komponenten, Formulare und Routing.
-- *Nam:* Backend (Node.js / Firebase), Datenbankstruktur und Authentifizierung.
+- *Suheib:* Frontend, UI-Komponenten, Formulare und Routing.
+- *Nam:* Backend, Datenbankstruktur und Authentifizierung.
 
 ---
 
