@@ -102,13 +102,12 @@ Wenn mehrere Personen denselben Gegenstand beanspruchen:
   - Einfacher Suche/Filterfunktion
 
 *Individuelle Ziele:*
-- *Suheib:* Frontend, UI-Komponenten, Formulare und Routing.
-- *Nam:* Backend, Datenbankstruktur und Authentifizierung.
+- *Suheib:* Frontend, UI-Komponenten
+- *Nam:* Backend, Datenbankstruktur und Authentifizierung
 
 ---
 
 ## 🔮 Erweiterungsideen (Future Features)
 
 - Pförtner-Accounts mit Admin-Rechten (z. B. Posts prüfen oder löschen)
-- Benachrichtigungssystem (E-Mail bei Übereinstimmung)
 - Markierung: „Gefunden“, „Abgeholt“ oder „Offen“
