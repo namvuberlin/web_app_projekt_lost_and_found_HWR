@@ -17,4 +17,4 @@ Alle Details zur Projektidee, der Value Proposition, den UI-Entwürfen und unser
 ### Team
 
 * Nam Tung Vu
-* Suheib Al Rabti
+* Suheib Abdolkadir Mohammed Saaid
