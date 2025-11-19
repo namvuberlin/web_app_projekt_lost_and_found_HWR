@@ -18,20 +18,20 @@ https://github.com/namvuberlin/web_app_projekt_lost_and_found_HWR
 
 ### Problem
 An der HWR Berlin gehen regelmäßig persönliche Gegenstände verloren (Studentenausweise, Schlüssel, Ladegeräte, Kleidung usw.).
-Der aktuelle Prozess ist *kompliziert und unübersichtlich*:
+Der aktuelle Prozess ist kompliziert und unübersichtlich:
 
-- Gefundene Gegenstände werden bei den *Pförtnern in Haus A, B oder E* abgegeben.
-- Studierende müssen *mehrere Standorte ablaufen*, um nachzufragen.
-- Alternativ werden *WhatsApp-Gruppen* genutzt – diese erreichen aber *nicht alle* und Informationen gehen schnell verloren.
+- Gefundene Gegenstände werden bei den Pförtnern in Haus A, B oder E abgegeben.
+- Studierende müssen mehrere Standorte ablaufen, um nachzufragen.
+- Alternativ werden WhatsApp-Gruppen genutzt – diese erreichen aber *nicht alle* und Informationen gehen schnell verloren.
 
 ### Lösung
-*Lost & Found HWR* ist eine *digitale Anzeigetafel* für Studierende der HWR Berlin.
-Sowohl *Finder* als auch *Suchende* können sich anmelden und Posts erstellen.
+Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
+Sowohl Finder als auch *Suchende* können sich anmelden und Posts erstellen.
 
-*Funktionen:*
-- Beiträge mit *Titel, Beschreibung, Standort, Foto und Kontaktdaten* erstellen.
-- Alle Posts erscheinen auf einer *gemeinsamen Pinnwand*.
-- Kommunikation und Übergabe erfolgen *direkt zwischen den Studierenden* –
+Funktionen:
+- Beiträge mit Titel, Beschreibung, Standort, Foto und Kontaktdaten erstellen.
+- Alle Posts erscheinen auf einer gemeinsamen Pinnwand.
+- Kommunikation und Übergabe erfolgen direkt zwischen den Studierenden 
   die Plattform selbst *nimmt keine Vermittlerrolle ein*.
 - Dadurch bleibt das System einfach, datenschutzfreundlich und leicht nutzbar.
 
@@ -79,7 +79,7 @@ Sowohl *Finder* als auch *Suchende* können sich anmelden und Posts erstellen.
 ## ⚙ Nutzungskonzept & Entscheidungslogik
 
 ### Konzept: Digitale Anzeigetafel
-Die Plattform dient als *neutrales Schwarzes Brett*:
+Die Plattform dient als neutrales Schwarzes Brett:
 - Nutzer posten eigenverantwortlich (kein Moderator nötig).
 - Finder und Suchende kommunizieren direkt untereinander.
 - Die Plattform hält sich aus Rückgabeentscheidungen heraus.
