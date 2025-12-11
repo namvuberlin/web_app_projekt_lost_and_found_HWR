@@ -135,3 +135,17 @@ Die Ansichten für normale Nutzer und Administratoren:
 **Admin-Ansicht**
 ![Admin Dashboard](admin_dashboard.jpg)
 *Features: Verwaltung aller Posts und Nutzer, Statistiken.*
+
+### Datenmodell (Aktueller Implementierungsstand)
+
+Aktuell haben wir die Benutzerverwaltung mit Unterscheidung zwischen Studenten und Admins implementiert.
+
+**Tabelle: User**
+Code-Auszug aus `app.py`:
+
+```python
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(120), unique=True, nullable=False)
+    password = db.Column(db.String(120), nullable=False)  
+    is_admin = db.Column(db.Boolean, default=False)
