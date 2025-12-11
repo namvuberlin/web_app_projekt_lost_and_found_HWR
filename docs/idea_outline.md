@@ -41,7 +41,7 @@ Funktionen:
 
 ---
 
-## 🎨 Tentative UI Screens
+## Tentative UI Screens
 
 **1. Login & Register Screens**
 * **Login:** Eine einfache Seite zur Eingabe von `username` und `password` mit "Login"-Button.
