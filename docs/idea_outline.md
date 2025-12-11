@@ -112,3 +112,45 @@ Wenn mehrere Personen denselben Gegenstand beanspruchen:
 
 - Pförtner-Accounts mit Admin-Rechten (z. B. Posts prüfen oder löschen)
 - Markierung: „Gefunden“, „Abgeholt“ oder „Offen“
+
+---
+UI Screens
+
+<section>
+    <h3>Authentifizierung</h3>
+    <p>Hier sind unsere Entwürfe für den Zugang zur App:</p>
+    
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div>
+            <h4>Login Screen</h4>
+            <img src="login.jpg" alt="Login Screen Entwurf" style="max-width: 400px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+
+        <div>
+            <h4>Registrierung</h4>
+            <img src="register.jpg" alt="Register Screen Entwurf" style="max-width: 400px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section>
+    <h3>Hauptfunktionen (Dashboards)</h3>
+    <p>Die Ansichten für normale Nutzer und Administratoren:</p>
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div>
+            <h4>Studenten-Ansicht (Suchende & Finder)</h4>
+            <img src="student_dashboard.jpg" alt="Student Dashboard" style="max-width: 600px; border: 1px solid #ccc; border-radius: 5px;">
+            <p><em>Features: Dashboard-Übersicht, Posts filtern, Neuen Post erstellen.</em></p>
+        </div>
+
+        <div>
+            <h4>Admin-Ansicht</h4>
+            <img src="admin_dashboard.jpg" alt="Admin Dashboard" style="max-width: 600px; border: 1px solid #ccc; border-radius: 5px;">
+            <p><em>Features: Verwaltung aller Posts und Nutzer, Statistiken.</em></p>
+        </div>
+    </div>
+</section>
+
