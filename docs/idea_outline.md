@@ -114,43 +114,24 @@ Wenn mehrere Personen denselben Gegenstand beanspruchen:
 - Markierung: „Gefunden“, „Abgeholt“ oder „Offen“
 
 ---
-UI Screens
+### Authentifizierung
+Hier sind unsere Entwürfe für den Zugang zur App:
 
-<section>
-    <h3>Authentifizierung</h3>
-    <p>Hier sind unsere Entwürfe für den Zugang zur App:</p>
-    
-    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-        <div>
-            <h4>Login Screen</h4>
-            <img src="login.jpg" alt="Login Screen Entwurf" style="max-width: 400px; border: 1px solid #ccc; border-radius: 5px;">
-        </div>
+**Login Screen**
+![Login Entwurf](login.jpg)
 
-        <div>
-            <h4>Registrierung</h4>
-            <img src="register.jpg" alt="Register Screen Entwurf" style="max-width: 400px; border: 1px solid #ccc; border-radius: 5px;">
-        </div>
-    </div>
-</section>
+**Registrierung**
+![Register Entwurf](register.jpg)
 
-<hr>
+---
 
-<section>
-    <h3>Hauptfunktionen (Dashboards)</h3>
-    <p>Die Ansichten für normale Nutzer und Administratoren:</p>
+### Hauptfunktionen (Dashboards)
+Die Ansichten für normale Nutzer und Administratoren:
 
-    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-        <div>
-            <h4>Studenten-Ansicht (Suchende & Finder)</h4>
-            <img src="student_dashboard.jpg" alt="Student Dashboard" style="max-width: 600px; border: 1px solid #ccc; border-radius: 5px;">
-            <p><em>Features: Dashboard-Übersicht, Posts filtern, Neuen Post erstellen.</em></p>
-        </div>
+**Studenten-Ansicht**
+![Student Dashboard](student_dashboard.jpg)
+*Features: Dashboard-Übersicht, Posts filtern, Neuer Post erstellen.*
 
-        <div>
-            <h4>Admin-Ansicht</h4>
-            <img src="admin_dashboard.jpg" alt="Admin Dashboard" style="max-width: 600px; border: 1px solid #ccc; border-radius: 5px;">
-            <p><em>Features: Verwaltung aller Posts und Nutzer, Statistiken.</em></p>
-        </div>
-    </div>
-</section>
-
+**Admin-Ansicht**
+![Admin Dashboard](admin_dashboard.jpg)
+*Features: Verwaltung aller Posts und Nutzer, Statistiken.*
