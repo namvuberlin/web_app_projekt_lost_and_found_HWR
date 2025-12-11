@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Student Dashboard{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Student Dashboard</h2>
+
+<div class="row g-3">
+
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Eigene Posts</h5>
+        <p class="card-text">Zahl deiner Lost-/Found-Posts</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Nachrichten</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Neueste Posts</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
