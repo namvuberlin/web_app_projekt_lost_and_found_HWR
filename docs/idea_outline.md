@@ -1,6 +1,6 @@
-# 💡 Lost & Found HWR — Idea Outline
+# Lost & Found HWR — Idea Outline
 
-## 🧩 Team Information
+## Team Information
 
 *Team Name:*
 Lost & Found HWR
@@ -14,7 +14,7 @@ https://github.com/namvuberlin/web_app_projekt_lost_and_found_HWR
 
 ---
 
-## 🧠 Value Proposition
+## Value Proposition
 
 ### Problem
 An der HWR Berlin gehen regelmäßig persönliche Gegenstände verloren (Studentenausweise, Schlüssel, Ladegeräte, Kleidung usw.).
@@ -93,7 +93,7 @@ Wenn mehrere Personen denselben Gegenstand beanspruchen:
 
 ---
 
-## 🎯 Team Goals
+## Team Goals
 
 *Gruppenziel:*
 - Funktionierende Web-App mit:
@@ -108,7 +108,7 @@ Wenn mehrere Personen denselben Gegenstand beanspruchen:
 
 ---
 
-## 🔮 Erweiterungsideen (Future Features)
+## Erweiterungsideen (Future Features)
 
 - Pförtner-Accounts mit Admin-Rechten (z. B. Posts prüfen oder löschen)
 - Markierung: „Gefunden“, „Abgeholt“ oder „Offen“
