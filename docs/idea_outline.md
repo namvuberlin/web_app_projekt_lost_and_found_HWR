@@ -76,7 +76,7 @@ Funktionen:
 
 ---
 
-## ⚙ Nutzungskonzept & Entscheidungslogik
+## Nutzungskonzept & Entscheidungslogik
 
 ### Konzept: Digitale Anzeigetafel
 Die Plattform dient als neutrales Schwarzes Brett:
