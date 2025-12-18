@@ -8,13 +8,14 @@ nav_order: 0
 >
 > You may delete this `attention` box.
 
-# [Project Name]
+# [Lost & Found HWR]
 
-[Project description]
+[Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
+Sowohl Finder als auch *Suchende* können sich anmelden und Posts erstellen.]
 
 ## Team members
 
-### [Jane Dane]
+### [Nam Tung Vu]
 
 About
 : Some info about Jane
@@ -22,7 +23,7 @@ About
 Matr.-Nr.
 : 1234567
 
-### [Joe Doe]
+### [Suheib Abdolkadir Mohammed Saaid]
 
 About
 : Some info about Joe

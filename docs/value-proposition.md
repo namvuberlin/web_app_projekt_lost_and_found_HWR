@@ -18,15 +18,31 @@ nav_order: 1
 
 ## The problem
 
-[Describe which problem your application tackles and why it is relevant.]
+[An der HWR Berlin gehen regelmäßig persönliche Gegenstände verloren (Studentenausweise, Schlüssel, Ladegeräte, Kleidung usw.).
+Der aktuelle Prozess ist kompliziert und unübersichtlich:
+
+- Gefundene Gegenstände werden bei den Pförtnern in Haus A, B oder E abgegeben.
+- Studierende müssen mehrere Standorte ablaufen, um nachzufragen.
+- Alternativ werden WhatsApp-Gruppen genutzt – diese erreichen aber *nicht alle* und Informationen gehen schnell verloren.
+]
 
 ## Our solution
 
-[Describe why and how your app solves the stated problem. Don't over-promise: the description should match what your app actually delivers.]
+[Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
+Sowohl Finder als auch *Suchende* können sich anmelden und Posts erstellen.
+
+Funktionen:
+- Beiträge mit Titel, Beschreibung, Standort, Foto und Kontaktdaten erstellen.
+- Alle Posts erscheinen auf einer gemeinsamen Pinnwand.
+- Kommunikation und Übergabe erfolgen direkt zwischen den Studierenden 
+  die Plattform selbst *nimmt keine Vermittlerrolle ein*.
+- Dadurch bleibt das System einfach, datenschutzfreundlich und leicht nutzbar.
+]
 
 ## Target user
 
-[Scope your target user(s), e.g., with the help of personas.]
+[- Studierende der HWR Berlin
+- Optional: Mitarbeitende (z. B. Pförtner), die Fundmeldungen einsehen möchten]
 
 ## Customer journey
 
