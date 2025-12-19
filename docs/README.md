@@ -10,8 +10,7 @@ Unsere Lösung ist eine zentrale, digitale Pinnwand, auf der **Finder** und **Su
 
 ## Projektdokumentation
 
-Alle Details zur Projektidee, der Value Proposition, den UI-Entwürfen und unseren Teamzielen finden Sie in unserem **[Idea Outline im /docs Ordner](idea_outline.md)**.
-
+Alle Details zur Projektidee, der Value Proposition, den UI-Entwürfen und unseren Teamzielen finden Sie in unserem https://namvuberlin.github.io/web_app_projekt_lost_and_found_HWR/ .
 ---
 
 ### Team
