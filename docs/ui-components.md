@@ -24,7 +24,7 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 ## Student UI
 
 ### Student Login
-![student_login]({{ site.baseurl }}/assets/images/student_login.png)
+![student_login](assets/images/student_login.png)
 
 ### Student Dashboard
 ![student_dashboard](assets/images/student_dashboard.png)
@@ -41,10 +41,10 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 ## Admin UI
 
 ### Admin Login
-![admin_login]({{ site.baseurl }}/assets/images/admin_login.png)
+![admin_login](assets/images/admin_login.png)
 
 ### Admin Dashboard
-![admin_dashboard]({{ site.baseurl }}/assets/images/admin_dashboard.png)
+![admin_dashboard](assets/images/admin_dashboard.png)
 
 ### Posts (Admin)
 ![admin_posts](assets/images/admin_posts.png)
