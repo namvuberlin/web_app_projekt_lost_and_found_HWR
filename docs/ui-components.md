@@ -23,37 +23,70 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 
 ## Student UI
 
+ 
+
 ### Student Login
-![student_login](..assets/images/student_login.png)
+
+![student_login](assets/images/student_login.png)
+
+ 
 
 ### Student Dashboard
+
 ![student_dashboard](assets/images/student_dashboard.png)
 
+ 
+
 ### Request Missing Items (Lost Posts)
+
 ![student_request_missing_items](assets/images/student_request_missing_items.png)
 
+ 
+
 ### Found Items (Found Posts)
+
 ![student_found_items](assets/images/student_found_items.png)
 
+ 
+
 ### Profile
+
 ![student_profile](assets/images/student_profile.png)
+
+ 
 
 ## Admin UI
 
+ 
+
 ### Admin Login
-![admin_login](..assets/images/admin_login.png)
+
+![admin_login](assets/images/admin_login.png)
+
+ 
 
 ### Admin Dashboard
-![admin_dashboard](..assets/images/admin_dashboard.png)
+
+![admin_dashboard](assets/images/admin_dashboard.png)
+
+ 
 
 ### Posts (Admin)
+
 ![admin_posts](assets/images/admin_posts.png)
 
+ 
+
 ### Users (Admin)
+
 ![admin_users](assets/images/admin_users.png)
 
+ 
+
 ### Settings (Admin)
+
 ![admin_settings](assets/images/admin_settings.png)
+
 
 ## Callouts
 
