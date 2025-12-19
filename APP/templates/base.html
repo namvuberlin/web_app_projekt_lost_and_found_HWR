@@ -24,29 +24,50 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
 
-        {% if session.get('user_id') and session.get('is_admin') %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('admin_dashboard') }}">Admin Dashboard</a>
-          </li>
-        {% elif session.get('user_id') %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('student_dashboard') }}">Student Dashboard</a>
-          </li>
-        {% endif %}
+    {% if session.get('user_id') and session.get('is_admin') %}
 
-        {% if session.get('user_id') %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
-          </li>
-        {% endif %}
-      </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('admin_dashboard') }}">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('admin_posts') }}">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('admin_users') }}">Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('admin_settings') }}">Settings</a>
+      </li>
+
+    {% elif session.get('user_id') %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('student_dashboard') }}">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('student_lost') }}">Request Missing Items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('student_found') }}">Found Items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('student_profile') }}">Profile</a>
+      </li>
+    {% endif %}
+
+    {% if session.get('user_id') %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+      </li>
+    {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+      </li>
+    {% endif %}
+  </ul>
+
     </div>
   </div>
 </nav>

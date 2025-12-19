@@ -21,13 +21,39 @@ The [Just the Docs documentation](https://just-the-docs.github.io/just-the-docs/
 
 For a quick reference of the markdown syntax, visit [this page](https://github.com/just-the-docs/just-the-docs/blob/main/docs/index-test.md?plain=1).
 
-## Images
+## Student UI
 
-```markdown
-![get_list_todos_sample](assets/images/fswd-intro_02.png)
-```
+### Student Login
+![student_login](assets/images/student_login.png)
 
-![get_list_todos_sample](assets/images/fswd-intro_02.png)
+### Student Dashboard
+![student_dashboard](assets/images/student_dashboard.png)
+
+### Request Missing Items (Lost Posts)
+![student_request_missing_items](assets/images/student_request_missing_items.png)
+
+### Found Items (Found Posts)
+![student_found_items](assets/images/student_found_items.png)
+
+### Profile
+![student_profile](assets/images/student_profile.png)
+
+## Admin UI
+
+### Admin Login
+![admin_login](assets/images/admin_login.png)
+
+### Admin Dashboard
+![admin_dashboard](assets/images/admin_dashboard.png)
+
+### Posts (Admin)
+![admin_posts](assets/images/admin_posts.png)
+
+### Users (Admin)
+![admin_users](assets/images/admin_users.png)
+
+### Settings (Admin)
+![admin_settings](assets/images/admin_settings.png)
 
 ## Callouts
 

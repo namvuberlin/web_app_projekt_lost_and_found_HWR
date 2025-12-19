@@ -40,46 +40,148 @@ nav_order: 3
 
 ---
 
-## [Example, delete this section] Show to-do lists
+## Authentication
 
-### `get_lists()`
+### `login()`
 
-**Route:** `/lists/`
+**Route:** `/login`
 
-**Methods:** `GET`
+**Methods:** `GET`, `POST`
 
-**Purpose:** Show all to-do lists.
+**Purpose:**  
+Authentifiziert einen Student- oder Admin-Benutzer anhand von Benutzername und Passwort.
 
-**Sample output:**
+**Database interaction:**  
+- READ `users`
 
-![get_lists() sample](../assets/images/fswd-intro_00.png)
-
----
-
-### `get_list_todos(list_id)`
-
-**Route:** `/lists/<int:list_id>`
-
-**Methods:** `GET`
-
-**Purpose:** Retrieve all to-do items of to-do list with ID `list_id` from database and present to user.
-
-**Sample output:**
-
-![get_list_todos() sample](../assets/images/fswd-intro_02.png)
+**Sample output:**  
+Login-Formular oder Weiterleitung zum Dashboard
 
 ---
 
-## [Example, delete this section] Insert sample data
+### `register()`
 
-### `run_insert_sample()`
+**Route:** `/register`
 
-**Route:** `/insert/sample`
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Registriert einen neuen Student-Benutzer und speichert die Zugangsdaten sicher in der Datenbank.
+
+**Database interaction:**  
+- READ `users`  
+- WRITE `users`
+
+**Sample output:**  
+Registrierungsformular oder erfolgreiche Weiterleitung
+
+---
+
+## Student functionality
+
+### `student_dashboard()`
+
+**Route:** `/dashboard`
 
 **Methods:** `GET`
 
-**Purpose:** Flush the database and insert sample data set
+**Purpose:**  
+Zeigt das Student-Dashboard mit einer Übersicht über eigene Beiträge und aktuelle Einträge.
 
-**Sample output:**
+**Database interaction:**  
+- READ `items`  
+- READ `claims`
 
-Browser shows: `Database flushed and populated with some sample data.`
+**Sample output:**  
+Student-Dashboard-Ansicht
+
+---
+
+### `list_items()`
+
+**Route:** `/items`
+
+**Methods:** `GET`
+
+**Purpose:**  
+Listet alle gemeldeten verlorenen und gefundenen Gegenstände auf.
+
+**Database interaction:**  
+- READ `items`
+
+**Sample output:**  
+Liste der Lost- und Found-Items
+
+---
+
+### `create_item()`
+
+**Route:** `/items/create`
+
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Ermöglicht es einem Studenten, einen neuen Verlust- oder Fundbeitrag zu erstellen.
+
+**Database interaction:**  
+- WRITE `items`
+
+**Sample output:**  
+Formular zur Item-Erstellung oder Bestätigung
+
+---
+
+### `claim_item(item_id)`
+
+**Route:** `/items/<int:item_id>/claim`
+
+**Methods:** `POST`
+
+**Purpose:**  
+Ermöglicht es einem Studenten, einen Anspruch auf einen Gegenstand zu stellen.
+
+**Database interaction:**  
+- WRITE `claims`
+
+**Sample output:**  
+Anspruch wurde eingereicht (Status: pending)
+
+---
+
+## Admin functionality
+
+### `admin_dashboard()`
+
+**Route:** `/admin/dashboard`
+
+**Methods:** `GET`
+
+**Purpose:**  
+Zeigt eine administrative Übersicht über Beiträge, offene Ansprüche und Benutzer.
+
+**Database interaction:**  
+- READ `items`  
+- READ `claims`  
+- READ `users`
+
+**Sample output:**  
+Admin-Dashboard-Ansicht
+
+---
+
+### `review_claim(claim_id)`
+
+**Route:** `/admin/claims/<int:claim_id>`
+
+**Methods:** `POST`
+
+**Purpose:**  
+Ermöglicht es einem Administrator, einen Anspruch zu genehmigen oder abzulehnen.
+
+**Database interaction:**  
+- WRITE `claims`  
+- WRITE `items`
+
+**Sample output:**  
+Anspruch wurde genehmigt oder abgelehnt
+

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2 class="mb-3">Profile</h2>
+
+<div class="card">
+  <div class="card-body">
+    <p class="mb-2"><strong>Username:</strong> {{ session.get('username') }}</p>
+    <p class="mb-0"><strong>Role:</strong> Student</p>
+  </div>
+</div>
+{% endblock %}

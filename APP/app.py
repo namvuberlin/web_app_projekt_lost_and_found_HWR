@@ -137,11 +137,42 @@ def logout():
 def student_dashboard():
     return render_template('student/dashboard.html')
 
+@app.route('/student/lost')
+@login_required
+def student_lost():
+    return render_template('student/lost.html')
+
+@app.route('/student/found')
+@login_required
+def student_found():
+    return render_template('student/found.html')
+
+@app.route('/student/profile')
+@login_required
+def student_profile():
+    return render_template('student/profile.html')
+
 
 @app.route('/admin/dashboard')
 @admin_required
 def admin_dashboard():
     return render_template('admin/dashboard.html')
+
+@app.route('/admin/posts')
+@admin_required
+def admin_posts():
+    return render_template('admin/posts.html')
+
+@app.route('/admin/users')
+@admin_required
+def admin_users():
+    return render_template('admin/users.html')
+
+@app.route('/admin/settings')
+@admin_required
+def admin_settings():
+    return render_template('admin/settings.html')
+
 
 
 

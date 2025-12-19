@@ -17,4 +17,9 @@ nav_order: 2
 {: toc }
 </details>
 
-[Visualize and describe the data model(s) of your application. This description should match the actual implementation.]
+![Application Flow Diagram](assets/images/ablaufdiagramm.png)
+
+
+![Data Model Diagram](assets/images/datenmodell.png)
+
+
