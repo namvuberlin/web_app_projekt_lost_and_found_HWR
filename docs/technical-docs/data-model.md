@@ -17,9 +17,9 @@ nav_order: 2
 {: toc }
 </details>
 
-![Application Flow Diagram](/docs/assets/images/Ablauf.png)
+![Application Flow Diagram](docs/assets/images/Ablauf.png)
 
 
-![Data Model Diagram](/docs/assets/images/Datanmodel.png)
+![Data Model Diagram](docs/assets/images/Datanmodel.png)
 
 

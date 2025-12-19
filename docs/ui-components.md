@@ -24,7 +24,7 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 ## Student UI
 
 ### Student Login
-![student_login](assets/images/student_login.png)
+![student_login](docs/assets/images/student_login.png)
 
 ### Student Dashboard
 ![student_dashboard](assets/images/student_dashboard.png)
