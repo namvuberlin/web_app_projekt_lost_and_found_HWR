@@ -1,49 +1,33 @@
 {% extends 'base.html' %}
-{% block title %}Admin Users{% endblock %}
+{% block title %}Admin Settings{% endblock %}
 
 {% block content %}
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <h2 class="mb-0">Users</h2>
-  <button class="btn btn-outline-dark" disabled>Add User</button>
-</div>
+<h2 class="mb-3">Settings</h2>
 
 <div class="card shadow-sm">
   <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-hover align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>Role</th>
-            <th class="text-end">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Station Name</label>
+        <input class="form-control" placeholder="e.g. Janitor Office / Lost & Found Station" disabled>
+      </div>
 
-          <tr>
-            <td>1</td>
-            <td>admin</td>
-            <td><span class="badge text-bg-danger">Admin</span></td>
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
-              <button class="btn btn-sm btn-outline-danger" disabled>Remove</button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>student123</td>
-            <td><span class="badge text-bg-dark">Student</span></td>
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
-              <button class="btn btn-sm btn-outline-danger" disabled>Remove</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="mb-3">
+        <label class="form-label">Contact Email</label>
+        <input class="form-control" placeholder="lostfound@uhwr.com" disabled>
+      </div>
 
-    <small class="text-muted">DEMO Placeholder data for UI.</small>
+      <div class="mb-3">
+        <label class="form-label">Default Status for new Posts</label>
+        <select class="form-select" disabled>
+          <option>Open</option>
+          <option>Closed</option>
+        </select>
+      </div>
+
+      <button class="btn btn-danger" type="button" disabled>Save</button>
+      <small class="text-muted ms-2">UI only (not functional yet).</small>
+    </form>
   </div>
 </div>
 {% endblock %}
