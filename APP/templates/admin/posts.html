@@ -7,9 +7,94 @@
   <button class="btn btn-danger" disabled>Add Post</button>
 </div>
 
-<div class="card">
+<div class="card shadow-sm mb-3">
   <div class="card-body">
-    <p class="mb-0">Hier kommt später die Liste aller Lost/Found Posts.</p>
+    <div class="row g-2 align-items-end">
+      <div class="col-md-4">
+        <label class="form-label">Search</label>
+        <input class="form-control" placeholder="Title, category, location..." disabled>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Type</label>
+        <select class="form-select" disabled>
+          <option>All</option>
+          <option>Lost</option>
+          <option>Found</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Status</label>
+        <select class="form-select" disabled>
+          <option>All</option>
+          <option>Open</option>
+          <option>Claimed</option>
+          <option>Closed</option>
+        </select>
+      </div>
+      <div class="col-md-2 d-grid">
+        <button class="btn btn-outline-dark" disabled>Apply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Created by</th>
+            <th>Date</th>
+            <th class="text-end">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>1</td>
+            <td><span class="badge text-bg-warning">LOST</span></td>
+            <td>Black Wallet</td>
+            <td><span class="badge text-bg-primary">OPEN</span></td>
+            <td>student123</td>
+            <td>—</td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
+              <button class="btn btn-sm btn-outline-danger" disabled>Edit</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td><span class="badge text-bg-success">FOUND</span></td>
+            <td>Keys with blue tag</td>
+            <td><span class="badge text-bg-secondary">CLOSED</span></td>
+            <td>admin</td>
+            <td>—</td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
+              <button class="btn btn-sm btn-outline-danger" disabled>Edit</button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <small class="text-muted">DEMO Showing placeholder rows.</small>
+      <nav>
+        <ul class="pagination mb-0">
+          <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </div>
 {% endblock %}

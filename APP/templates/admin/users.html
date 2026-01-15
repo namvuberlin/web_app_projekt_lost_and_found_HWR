@@ -2,11 +2,48 @@
 {% block title %}Admin Users{% endblock %}
 
 {% block content %}
-<h2 class="mb-3">Users</h2>
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2 class="mb-0">Users</h2>
+  <button class="btn btn-outline-dark" disabled>Add User</button>
+</div>
 
-<div class="card">
+<div class="card shadow-sm">
   <div class="card-body">
-    <p class="mb-0">Hier kommt später eine Liste aller Student-User.</p>
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th class="text-end">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>1</td>
+            <td>admin</td>
+            <td><span class="badge text-bg-danger">Admin</span></td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
+              <button class="btn btn-sm btn-outline-danger" disabled>Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>student123</td>
+            <td><span class="badge text-bg-dark">Student</span></td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
+              <button class="btn btn-sm btn-outline-danger" disabled>Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <small class="text-muted">DEMOOO Placeholder data for UI.</small>
   </div>
 </div>
 {% endblock %}
