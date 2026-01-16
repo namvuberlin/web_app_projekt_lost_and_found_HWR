@@ -142,6 +142,12 @@ def student_dashboard():
 def student_lost():
     return render_template('student/lost.html')
 
+@app.route('/student/post/new')
+@login_required
+def student_new_post():
+    return render_template('student/new_post.html')
+
+
 @app.route('/student/found')
 @login_required
 def student_found():

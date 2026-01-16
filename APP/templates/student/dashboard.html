@@ -1,38 +1,72 @@
 {% extends 'base.html' %}
-
 {% block title %}Student Dashboard{% endblock %}
 
 {% block content %}
-<h2 class="mb-4">Student Dashboard</h2>
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h2 class="mb-1">Student Dashboard</h2>
+    <div class="text-muted">Welcome, {{ session.get('username') }}</div>
+  </div>
+  <a class="btn btn-dark" href="{{ url_for('student_new_post') }}">Create Post</a>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">Your Posts</h6>
+        <h3 class="mb-0">—</h3>
+        <small class="text-muted">Coming soon</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">Messages</h6>
+        <h3 class="mb-0">—</h3>
+        <small class="text-muted">Coming soon</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h6 class="card-subtitle text-muted mb-2">New Posts</h6>
+        <h3 class="mb-0">—</h3>
+        <small class="text-muted">Coming soon</small>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="row g-3">
-
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h5 class="card-title">Eigene Posts</h5>
-        <p class="card-text">Zahl deiner Lost-/Found-Posts</p>
+        <h5 class="card-title">Quick Links</h5>
+        <p class="text-muted mb-3">Navigate to the main student pages.</p>
+        <div class="d-grid gap-2">
+          <a class="btn btn-outline-dark" href="{{ url_for('student_lost') }}">Request Missing Items</a>
+          <a class="btn btn-outline-dark" href="{{ url_for('student_found') }}">Found Items</a>
+          <a class="btn btn-outline-secondary" href="{{ url_for('student_profile') }}">Profile</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h5 class="card-title">Nachrichten</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">How it works</h5>
+        <p class="mb-0 text-muted">
+          Create a Lost post if you are missing an item. Create a Found post if you found something
+          and delivered it to the station. Later you can message the admin and claim items.
+        </p>
       </div>
     </div>
   </div>
-
-  <div class="col-md-4">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Neueste Posts</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-
 </div>
 {% endblock %}

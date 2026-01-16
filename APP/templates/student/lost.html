@@ -4,12 +4,59 @@
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-3">
   <h2 class="mb-0">Request of Missing Items</h2>
-  <button class="btn btn-dark" disabled>Create Lost Post</button>
+  <a class="btn btn-dark" href="{{ url_for('student_new_post') }}">Create Post</a>
 </div>
 
-<div class="card">
+<div class="card shadow-sm mb-3">
   <div class="card-body">
-    <p class="mb-0">Hier kommt später die Liste der vermissten Items (Lost Posts).</p>
+    <div class="row g-2 align-items-end">
+      <div class="col-md-8">
+        <label class="form-label">Search</label>
+        <input class="form-control" placeholder="Search missing items..." disabled>
+      </div>
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-outline-dark" disabled>Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th class="text-end">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Black Wallet</td>
+            <td>Main Building</td>
+            <td><span class="badge text-bg-primary">OPEN</span></td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>AirPods Case</td>
+            <td>Library</td>
+            <td><span class="badge text-bg-primary">OPEN</span></td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </div>
 {% endblock %}
