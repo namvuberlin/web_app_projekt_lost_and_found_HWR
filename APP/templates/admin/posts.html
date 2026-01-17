@@ -4,97 +4,68 @@
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-3">
   <h2 class="mb-0">Posts</h2>
-  <button class="btn btn-danger" disabled>Add Post</button>
-</div>
-
-<div class="card shadow-sm mb-3">
-  <div class="card-body">
-    <div class="row g-2 align-items-end">
-      <div class="col-md-4">
-        <label class="form-label">Search</label>
-        <input class="form-control" placeholder="Title, category, location..." disabled>
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">Type</label>
-        <select class="form-select" disabled>
-          <option>All</option>
-          <option>Lost</option>
-          <option>Found</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label class="form-label">Status</label>
-        <select class="form-select" disabled>
-          <option>All</option>
-          <option>Open</option>
-          <option>Claimed</option>
-          <option>Closed</option>
-        </select>
-      </div>
-      <div class="col-md-2 d-grid">
-        <button class="btn btn-outline-dark" disabled>Apply</button>
-      </div>
-    </div>
-  </div>
+  <span class="text-muted">List of all lost & found posts</span>
 </div>
 
 <div class="card shadow-sm">
   <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-hover align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Type</th>
-            <th>Title</th>
-            <th>Status</th>
-            <th>Created by</th>
-            <th>Date</th>
-            <th class="text-end">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
+    {% if posts and posts|length > 0 %}
+      <div class="table-responsive">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Type</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Location</th>
+              <th>Created</th>
+              <th class="text-end">Creator</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for post in posts %}
+              <tr>
+                <td>{{ post.id }}</td>
 
-          <tr>
-            <td>1</td>
-            <td><span class="badge text-bg-warning">LOST</span></td>
-            <td>Black Wallet</td>
-            <td><span class="badge text-bg-primary">OPEN</span></td>
-            <td>student123</td>
-            <td>—</td>
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
-              <button class="btn btn-sm btn-outline-danger" disabled>Edit</button>
-            </td>
-          </tr>
+                <td>
+                  {% if post.post_type == "lost" %}
+                    <span class="badge text-bg-warning">LOST</span>
+                  {% else %}
+                    <span class="badge text-bg-success">FOUND</span>
+                  {% endif %}
+                </td>
 
-          <tr>
-            <td>2</td>
-            <td><span class="badge text-bg-success">FOUND</span></td>
-            <td>Keys with blue tag</td>
-            <td><span class="badge text-bg-secondary">CLOSED</span></td>
-            <td>admin</td>
-            <td>—</td>
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-secondary" disabled>View</button>
-              <button class="btn btn-sm btn-outline-danger" disabled>Edit</button>
-            </td>
-          </tr>
+                <td>{{ post.title }}</td>
 
-        </tbody>
-      </table>
-    </div>
+                <td>
+                  {% if post.status == "open" %}
+                    <span class="badge text-bg-primary">OPEN</span>
+                  {% elif post.status == "claimed" %}
+                    <span class="badge text-bg-info">CLAIMED</span>
+                  {% else %}
+                    <span class="badge text-bg-secondary">CLOSED</span>
+                  {% endif %}
+                </td>
 
-    <div class="d-flex justify-content-between align-items-center">
-      <small class="text-muted">DEMO Showing placeholder rows.</small>
-      <nav>
-        <ul class="pagination mb-0">
-          <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-    </div>
+                <td>{{ post.location or "-" }}</td>
+
+                <td>{{ post.created_at.strftime("%Y-%m-%d") }}</td>
+
+                <td class="text-end">
+                  {{ post.creator.username if post.creator else "-" }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <div class="text-center py-4">
+        <h5 class="mb-2">No posts yet</h5>
+        <a class="btn btn-danger" href="{{ url_for('admin_posts_new') }}">Add Post</a>
+      </div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

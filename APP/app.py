@@ -1,23 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-from db import db
+from db import db, User, ItemPost
 
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'dev-key'  
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'  
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config["SECRET_KEY"] = "dev-key"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db.init_app(app)
-
-
-
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(120), unique=True, nullable=False)
-    password = db.Column(db.String(120), nullable=False)  
-    is_admin = db.Column(db.Boolean, default=False)
-
 
 
 def login_required(f):
@@ -31,6 +22,7 @@ def login_required(f):
 
     return wrapper
 
+# Admin Logic and Routes
 
 def admin_required(f):
     from functools import wraps
@@ -42,6 +34,44 @@ def admin_required(f):
         return f(*args, **kwargs)
 
     return wrapper
+
+
+@app.route("/admin/posts/new", methods=["GET", "POST"])
+@admin_required
+def admin_posts_new():
+    error = None
+
+    if request.method == "POST":
+        post_type = (request.form.get("post_type") or "").strip().lower()
+        title = (request.form.get("title") or "").strip()
+        description = (request.form.get("description") or "").strip()
+        location = (request.form.get("location") or "").strip()
+        status = (request.form.get("status") or "open").strip().lower()
+
+        if post_type not in ("lost", "found"):
+            error = "Please choose Lost or Found."
+        elif not title or not description:
+            error = "Title and description are required."
+        elif status not in ("open", "claimed", "closed"):
+            error = "Invalid status."
+        else:
+            admin_user = User.query.get(session["user_id"])
+
+            post = ItemPost(
+                post_type=post_type,
+                title=title,
+                description=description,
+                location=location or None,
+                status=status,
+                created_by=admin_user.id
+            )
+
+            db.session.add(post)
+            db.session.commit()
+            return redirect(url_for("admin_posts"))
+
+    return render_template("admin/post_form.html", mode="new", error=error, post=None)
+
 
 
 
@@ -125,6 +155,30 @@ def admin_login():
 
     return render_template('auth/admin_login.html', error=error)
 
+@app.route('/admin/dashboard')
+@admin_required
+def admin_dashboard():
+    return render_template('admin/dashboard.html')
+
+
+@app.route("/admin/posts")
+@admin_required
+def admin_posts():
+    posts = ItemPost.query.order_by(ItemPost.created_at.desc()).all()
+    return render_template("admin/posts.html", posts=posts)
+
+@app.route('/admin/users')
+@admin_required
+def admin_users():
+    return render_template('admin/users.html')
+
+@app.route('/admin/settings')
+@admin_required
+def admin_settings():
+    return render_template('admin/settings.html')
+
+#Student Logic and Routes
+
 
 @app.route('/logout')
 def logout():
@@ -159,25 +213,7 @@ def student_profile():
     return render_template('student/profile.html')
 
 
-@app.route('/admin/dashboard')
-@admin_required
-def admin_dashboard():
-    return render_template('admin/dashboard.html')
 
-@app.route('/admin/posts')
-@admin_required
-def admin_posts():
-    return render_template('admin/posts.html')
-
-@app.route('/admin/users')
-@admin_required
-def admin_users():
-    return render_template('admin/users.html')
-
-@app.route('/admin/settings')
-@admin_required
-def admin_settings():
-    return render_template('admin/settings.html')
 
 
 
