@@ -4,7 +4,7 @@
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-3">
   <h2 class="mb-0">{% if mode == "edit" %}Edit Post{% else %}Create Post{% endif %}</h2>
-  <a class="btn btn-outline-secondary" href="{{ url_for('admin_posts') }}">Back</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('student_dashboard') }}">Back</a>
 </div>
 
 <div class="card shadow-sm">
@@ -15,13 +15,21 @@
     {% endif %}
 
     <form method="post">
-      <div class="mb-3">
-        <label class="form-label">Type</label>
-        <select name="post_type" class="form-select" required>
-          <option value="lost"  {% if post and post.post_type == "lost" %}selected{% endif %}>Lost</option>
-          <option value="found" {% if post and post.post_type == "found" %}selected{% endif %}>Found</option>
-        </select>
-      </div>
+      {% if mode == "new" %}
+        <div class="mb-3">
+          <label class="form-label">Type</label>
+          <select name="post_type" class="form-select" required>
+            <option value="" selected disabled>Choose...</option>
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+          </select>
+        </div>
+      {% else %}
+        <div class="mb-3">
+          <label class="form-label">Type</label>
+          <input class="form-control" value="{{ post.post_type }}" disabled>
+        </div>
+      {% endif %}
 
       <div class="mb-3">
         <label class="form-label">Title</label>
@@ -43,17 +51,20 @@
 
         <div class="col-md-6">
           <label class="form-label">Status</label>
-          <select name="status" class="form-select">
+          <select name="status" class="form-select" {% if mode == "new" %}disabled{% endif %}>
             <option value="open"    {% if post and post.status == "open" %}selected{% endif %}>Open</option>
             <option value="claimed" {% if post and post.status == "claimed" %}selected{% endif %}>Claimed</option>
             <option value="closed"  {% if post and post.status == "closed" %}selected{% endif %}>Closed</option>
           </select>
+          {% if mode == "new" %}
+            <div class="form-text">New posts are created as <strong>open</strong>.</div>
+          {% endif %}
         </div>
       </div>
 
       <div class="mt-4">
-        <button class="btn btn-danger" type="submit">
-          {% if mode == "edit" %}Save Changes{% else %}Save{% endif %}
+        <button class="btn btn-dark" type="submit">
+          {% if mode == "edit" %}Save Changes{% else %}Create{% endif %}
         </button>
       </div>
     </form>

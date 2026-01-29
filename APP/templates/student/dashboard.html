@@ -14,9 +14,8 @@
   <div class="col-md-4">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h6 class="card-subtitle text-muted mb-2">Your Posts</h6>
-        <h3 class="mb-0">—</h3>
-        <small class="text-muted">Coming soon</small>
+        <div class="text-muted">My Posts</div>
+        <div class="fs-2 fw-bold">{{ my_total }}</div>
       </div>
     </div>
   </div>
@@ -24,9 +23,8 @@
   <div class="col-md-4">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h6 class="card-subtitle text-muted mb-2">Messages</h6>
-        <h3 class="mb-0">—</h3>
-        <small class="text-muted">Coming soon</small>
+        <div class="text-muted">Open</div>
+        <div class="fs-2 fw-bold">{{ my_open }}</div>
       </div>
     </div>
   </div>
@@ -34,39 +32,79 @@
   <div class="col-md-4">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h6 class="card-subtitle text-muted mb-2">New Posts</h6>
-        <h3 class="mb-0">—</h3>
-        <small class="text-muted">Coming soon</small>
+        <div class="text-muted">Messages</div>
+        <div class="fs-2 fw-bold">0</div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row g-3">
-  <div class="col-md-6">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">Quick Links</h5>
-        <p class="text-muted mb-3">Navigate to the main student pages.</p>
-        <div class="d-grid gap-2">
-          <a class="btn btn-outline-dark" href="{{ url_for('student_lost') }}">Request Missing Items</a>
-          <a class="btn btn-outline-dark" href="{{ url_for('student_found') }}">Found Items</a>
-          <a class="btn btn-outline-secondary" href="{{ url_for('student_profile') }}">Profile</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h5 class="mb-3">My Recent Posts</h5>
 
-  <div class="col-md-6">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">How it works</h5>
-        <p class="mb-0 text-muted">
-          Create a Lost post if you are missing an item. Create a Found post if you found something
-          and delivered it to the station. Later you can message the admin and claim items.
-        </p>
+    {% if my_posts and my_posts|length > 0 %}
+      <div class="table-responsive">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Type</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Created</th>
+              <th class="text-end">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for post in my_posts %}
+              <tr>
+                <td>{{ post.id }}</td>
+                <td>
+                  {% if post.post_type == "lost" %}
+                    <span class="badge text-bg-warning">LOST</span>
+                  {% else %}
+                    <span class="badge text-bg-success">FOUND</span>
+                  {% endif %}
+                </td>
+                <td class="fw-semibold">{{ post.title }}</td>
+                <td>
+                  {% if post.status == "open" %}
+                    <span class="badge text-bg-primary">OPEN</span>
+                  {% elif post.status == "claimed" %}
+                    <span class="badge text-bg-info">CLAIMED</span>
+                  {% else %}
+                    <span class="badge text-bg-secondary">CLOSED</span>
+                  {% endif %}
+                </td>
+                <td>{{ post.created_at.strftime("%Y-%m-%d") }}</td>
+                <td class="text-end">
+                  <a class="btn btn-sm btn-outline-dark"
+                     href="{{ url_for('student_edit_post', post_id=post.id) }}">
+                    Edit
+                  </a>
+                  <form method="post"
+                        action="{{ url_for('student_delete_post', post_id=post.id) }}"
+                        class="d-inline">
+                    <button class="btn btn-sm btn-danger"
+                            type="submit"
+                            onclick="return confirm('Delete this post?');">
+                      Delete
+                    </button>
+                  </form>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
       </div>
-    </div>
+    {% else %}
+      <div class="text-center py-4">
+        <h6 class="mb-2">No posts yet</h6>
+        <p class="text-muted mb-3">Create your first lost/found post.</p>
+        <a class="btn btn-dark" href="{{ url_for('student_new_post') }}">Create Post</a>
+      </div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

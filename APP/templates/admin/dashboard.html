@@ -8,32 +8,38 @@
 </div>
 
 <div class="row g-3 mb-4">
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h6 class="card-subtitle text-muted mb-2">Total Posts</h6>
-        <h3 class="mb-0">—</h3>
-        <small class="text-muted">Coming soon</small>
+        <div class="text-muted">Total Posts</div>
+        <div class="fs-2 fw-bold">{{ total_posts }}</div>
       </div>
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h6 class="card-subtitle text-muted mb-2">Open Cases</h6>
-        <h3 class="mb-0">—</h3>
-        <small class="text-muted">Coming soon</small>
+        <div class="text-muted">Open</div>
+        <div class="fs-2 fw-bold">{{ open_posts }}</div>
       </div>
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h6 class="card-subtitle text-muted mb-2">Student Users</h6>
-        <h3 class="mb-0">—</h3>
-        <small class="text-muted">Coming soon</small>
+        <div class="text-muted">Claimed</div>
+        <div class="fs-2 fw-bold">{{ claimed_posts }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="text-muted">Closed</div>
+        <div class="fs-2 fw-bold">{{ closed_posts }}</div>
       </div>
     </div>
   </div>
@@ -44,12 +50,9 @@
     <div class="card shadow-sm">
       <div class="card-body">
         <h5 class="card-title">Quick Actions</h5>
-        <p class="text-muted mb-3">Go to the main admin sections.</p>
-
-        <div class="d-grid gap-2">
+        <div class="d-grid gap-2 d-md-flex">
           <a class="btn btn-danger" href="{{ url_for('admin_posts') }}">Manage Posts</a>
           <a class="btn btn-outline-dark" href="{{ url_for('admin_users') }}">View Users</a>
-          <a class="btn btn-outline-secondary" href="{{ url_for('admin_settings') }}">Settings</a>
         </div>
       </div>
     </div>
@@ -58,11 +61,8 @@
   <div class="col-md-6">
     <div class="card shadow-sm">
       <div class="card-body">
-        <h5 class="card-title">Notes</h5>
-        <p class="mb-0 text-muted">
-          This is UI-only for now. Later you can connect the database and show real numbers,
-          lists and actions.
-        </p>
+        <div class="text-muted">Student Users</div>
+        <div class="fs-2 fw-bold">{{ student_users }}</div>
       </div>
     </div>
   </div>
