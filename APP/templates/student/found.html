@@ -3,8 +3,11 @@
 
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-3">
-  <h2 class="mb-0">Found Items</h2>
-  <a class="btn btn-dark" href="{{ url_for('student_new_post') }}">Create Post</a>
+  <div>
+    <h2 class="mb-1">Found Items</h2>
+    <div class="text-muted">All items reported as found</div>
+  </div>
+  <a class="btn btn-dark" href="{{ url_for('student_new_post') }}">Create Lost/Found Post</a>
 </div>
 
 <div class="card shadow-sm">
@@ -14,18 +17,28 @@
         <table class="table table-hover align-middle">
           <thead>
             <tr>
-              <th>ID</th>
+              <th style="width: 80px;">ID</th>
               <th>Title</th>
-              <th>Status</th>
-              <th>Location</th>
-              <th>Created</th>
+              <th style="width: 120px;">Status</th>
+              <th style="width: 220px;">Location</th>
+              <th style="width: 140px;">Created</th>
             </tr>
           </thead>
           <tbody>
             {% for post in posts %}
               <tr>
                 <td>{{ post.id }}</td>
-                <td class="fw-semibold">{{ post.title }}</td>
+
+                <td class="fw-semibold">
+                  <a class="text-decoration-none"
+                     href="{{ url_for('student_post_detail', post_id=post.id) }}">
+                    {{ post.title }}
+                  </a>
+                  <div class="text-muted small">
+                    {{ post.description[:80] }}{% if post.description and post.description|length > 80 %}...{% endif %}
+                  </div>
+                </td>
+
                 <td>
                   {% if post.status == "open" %}
                     <span class="badge text-bg-primary">OPEN</span>
@@ -35,6 +48,7 @@
                     <span class="badge text-bg-secondary">CLOSED</span>
                   {% endif %}
                 </td>
+
                 <td>{{ post.location or "-" }}</td>
                 <td>{{ post.created_at.strftime("%Y-%m-%d") }}</td>
               </tr>
@@ -44,8 +58,9 @@
       </div>
     {% else %}
       <div class="text-center py-4">
-        <h6 class="mb-2">No found posts yet</h6>
-        <p class="text-muted mb-0">Be the first to create a Found post.</p>
+        <h5 class="mb-2">No found items yet</h5>
+        <p class="text-muted mb-3">Create a found post if you found something.</p>
+        <a class="btn btn-dark" href="{{ url_for('student_new_post') }}">Create Post</a>
       </div>
     {% endif %}
   </div>

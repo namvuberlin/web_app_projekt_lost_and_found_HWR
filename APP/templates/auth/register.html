@@ -11,18 +11,28 @@
       <div class="alert alert-danger">{{ error }}</div>
     {% endif %}
 
-    <form method="post">
+      <form method="post">
       <div class="mb-3">
         <label class="form-label">Username</label>
-        <input type="text" name="username" class="form-control" required>
+        <input class="form-control" name="username" required>
       </div>
 
       <div class="mb-3">
-        <label class="form-label">Passwort</label>
-        <input type="password" name="password" class="form-control" required>
+        <label class="form-label">Password</label>
+        <input class="form-control" type="password" name="password" required>
       </div>
 
-      <button class="btn btn-dark w-100" type="submit">Registrieren</button>
+      <div class="mb-3">
+        <label class="form-label">Matrikelnummer</label>
+        <input class="form-control" name="matriculation_number" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">HWR Email</label>
+        <input class="form-control" type="email" name="email" placeholder="name@hwr-berlin.de" required>
+      </div>
+
+      <button class="btn btn-dark w-100" type="submit">Register</button>
     </form>
 
     <div class="text-center mt-3">

@@ -1,33 +1,30 @@
 {% extends 'base.html' %}
-{% block title %}Admin Settings{% endblock %}
+{% block title %}Settings{% endblock %}
 
 {% block content %}
 <h2 class="mb-3">Settings</h2>
 
 <div class="card shadow-sm">
   <div class="card-body">
-    <form>
+
+    {% if error %}
+      <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+
+    <form method="post">
       <div class="mb-3">
         <label class="form-label">Station Name</label>
-        <input class="form-control" placeholder="e.g. Janitor Office / Lost & Found Station" disabled>
+        <input class="form-control" name="station_name" value="{{ settings.station_name }}" required>
       </div>
 
       <div class="mb-3">
         <label class="form-label">Contact Email</label>
-        <input class="form-control" placeholder="lostfound@uhwr.com" disabled>
+        <input class="form-control" type="email" name="contact_email" value="{{ settings.contact_email }}" required>
       </div>
 
-      <div class="mb-3">
-        <label class="form-label">Default Status for new Posts</label>
-        <select class="form-select" disabled>
-          <option>Open</option>
-          <option>Closed</option>
-        </select>
-      </div>
-
-      <button class="btn btn-danger" type="button" disabled>Save</button>
-      <small class="text-muted ms-2">UI only (not functional yet).</small>
+      <button class="btn btn-danger" type="submit">Save</button>
     </form>
+
   </div>
 </div>
 {% endblock %}
