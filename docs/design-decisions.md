@@ -191,8 +191,7 @@ Wir haben diese Optionen verglichen:
 + MySQL/PostgreSQL (Server-Datenbank)
 
 | Kriterium | SQLite + ORM (gewählt) | SQLite + Plain SQL | MySQL/PostgreSQL |
-| --- | --- | --- | --- |
+| --- | --- | --- | 
 | **Setup** | ✔️ lokal, schnell startbar | ✔️ lokal, schnell startbar | ❌ Server/Config nötig |
 | **Code-Struktur** | ✔️ Models & Relations klar | ❌ SQL verteilt im Code | ✔️ möglich, aber mehr Aufwand |
-| **Wartbarkeit** | ✔️ weniger Boilerplate | ❔ hängt stark von Disziplin ab | ❌ höherer Betriebsaufwand |
 | **Geeignet für Kursprojekt** | ✔️ ja | ✔️ ja | ❌ unnötig komplex |
