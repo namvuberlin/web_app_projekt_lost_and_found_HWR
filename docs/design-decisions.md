@@ -71,12 +71,13 @@ Begründung:
 
 ### Regarded options
 
-| Criterion | Eigenes CSS | Bootstrap (gewählt) |
-| --- | --- | --- |
-| **Entwicklungszeit** | ❌ langsam (viel selbst bauen) | ✔️ schnell (fertige Komponenten) |
-| **Konsistenz** | ❌ oft uneinheitlich | ✔️ einheitlicher Look |
-| **Responsive Design** | ❌ extra Aufwand | ✔️ eingebaut (Grid/Breakpoints) |
-| **Wartbarkeit** | ❌ mehr eigener Code | ✔️ weniger eigener CSS-Code |
+| Kriterium | Bootstrap 5 (gewählt) | Eigenes CSS | Tailwind CSS |
+| --- | --- | --- | --- |
+| **Einarbeitung** | ✔️ schnell (viele fertige Klassen) | ❌ dauert (alles selbst definieren) | ❔ extra Konzept (Utility-Ansatz) |
+| **Tempo beim Umsetzen** | ✔️ sehr schnell | ❌ eher langsam | ✔️ schnell, wenn man es kann |
+| **Responsive Layout** | ✔️ direkt enthalten | ❌ muss man selbst bauen | ✔️ vorhanden |
+| **Komponenten** (Buttons, Forms, Nav) | ✔️ viele sofort nutzbar | ❌ alles selbst bauen | ❌ selbst zusammenbauen |
+| **Passend zur Kursabgabe** | ✔️ unkompliziert | ✔️ möglich, aber mehr Aufwand | ❔ zusätzlicher Lernaufwand |
 
 ---
 
