@@ -17,7 +17,7 @@ nav_order: 3
 {: toc }
 </details>
 
-## Suheib - Review von Nam 
+## Suheib Abdolkadir Mohammed Saaid - Review von Nam Tung Vu 
 
 ### My observation (Wahrnehmung)
 
@@ -31,7 +31,7 @@ Durch seine Arbeit am UI konnte ich mich voll auf die Datenbankstruktur und die 
 
 Für das nächste Projekt wäre es gut, wenn wir die Benennung der Formular-Felder noch früher final absprechen. Manchmal mussten wir Anpassungen vornehmen, weil Datenbank und Frontend-Input nicht ganz synchron waren. Ansonsten hatten wir eine tolle Zusammenarbeit.
 
-## Nam - Review von Suheib
+## Nam Tung Vu - Suheib Abdolkadir Mohammed Saaid
 
 ### My observation (Wahrnehmung)
 Nam hat das komplette Backend mit Flask und SQLAlchemy aufgebaut. Er hat sich in die Datenbank-Beziehungen eingearbeitet und das Login-System implementiert. Auch die API-Schnittstelle für die JSON-Daten hat er vorbereitet, sodass die Datenstruktur im Hintergrund immer stabil war.
