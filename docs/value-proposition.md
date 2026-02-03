@@ -60,5 +60,5 @@ Alternative: Finder meldet einen Fund
 
 1. **Finder findet etwas:** z. B. ein Handy in Haus B.
 2. **Login:** Finder loggt sich ein.
-3. **Create Post:** Klick auf Create Lost/Found Post → Typ „FOUND“ auswählen → Titel/Beschreibung/Location eintragen → Post wird als open erstellt.
+3. **Create Post:** Klick auf Create Lost/Found Post → Typ Found auswählen → Titel/Beschreibung/Location eintragen → Post wird als open erstellt.
 4. **Rückgabe:** Nach Kontakt über Messages erfolgt die Übergabe → Post wird geschlossen oder gelöscht.
