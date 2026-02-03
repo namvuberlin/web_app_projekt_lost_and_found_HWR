@@ -107,7 +107,7 @@ Vorteil: klare Nutzerführung, weniger Verwirrung.
 
 ### Regarded options
 
-| Criterion | Eine Seite | Zwei Seiten |
+| Kriterium | Eine Seite | Zwei Seiten |
 | --- | --- | --- |
 | **Schnell ans Ziel** | ❌ mehr suchen/scrollen | ✔️ direkt richtige Seite |
 | **Orientierung** | ❌ wirkt unübersichtlich | ✔️ klare Trennung |
