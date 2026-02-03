@@ -58,8 +58,6 @@ Suchender
 
 Finder
 
-### Finder
-
 1. **Finder findet etwas:** z. B. ein Handy in Haus B.
 2. **Access:** Er öffnet die Lost & Found HWR Website.
 3. **Login/Registrierung:** Der Finder loggt sich ein (oder registriert sich).
