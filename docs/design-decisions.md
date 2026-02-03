@@ -71,15 +71,13 @@ Begründung:
 
 ### Regarded options
 
-+ Eigenes CSS komplett selbst schreiben
-+ Bootstrap 
-+ Anderes CSS-Framework (z. B. Tailwind) – zusätzlicher Lern-/Setup-Aufwand
+| Criterion | Eigenes CSS | Bootstrap (gewählt) |
+| --- | --- | --- |
+| **Entwicklungszeit** | ❌ langsam (viel selbst bauen) | ✔️ schnell (fertige Komponenten) |
+| **Konsistenz** | ❌ oft uneinheitlich | ✔️ einheitlicher Look |
+| **Responsive Design** | ❌ extra Aufwand | ✔️ eingebaut (Grid/Breakpoints) |
+| **Wartbarkeit** | ❌ mehr eigener Code | ✔️ weniger eigener CSS-Code |
 
-| Criterion | Eigenes CSS | Bootstrap (gewählt) | Alternatives Framework |
-| --- | --- | --- | --- |
-| Geschwindigkeit | ❌ | ✔️ | ❔ |
-| Konsistenz | ❔ | ✔️ | ✔️ |
-| Lernkurve | ✔️ | ✔️ | ❔ |
 
 
 
