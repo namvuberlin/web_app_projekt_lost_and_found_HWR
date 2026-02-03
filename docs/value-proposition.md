@@ -48,7 +48,7 @@ Funktionen:
 Suchender
 
 1. **Trigger:** Tim merkt nach der Vorlesung, dass sein Handy fehlt.
-2. **Access:** Er öffnet Lost & Found HWR auf dem Handy.
+2. **Access:** Er öffnet die Lost & Found HWR Website.
 3. **Login/Registrierung:** Tim loggt sich ein (oder registriert sich).
 4. **Search:** Er geht auf Found Items und schaut die Liste der Funde durch
 5. **Match:** Tim findet einen passenden Eintrag (Titel + Beschreibung) und öffnet den Post.
