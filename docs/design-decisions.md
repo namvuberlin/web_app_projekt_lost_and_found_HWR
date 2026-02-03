@@ -62,10 +62,10 @@ Wir benötigen ein responsives UI (Buttons, Forms, Cards, Navigation), ohne viel
 
 ### Decision
 
-Wir nutzen Bootstrap als UI-Framework.
+Wir verwenden Bootstrap als UI-Framework, statt eigenes CSS zu schreiben oder uns in Tailwind CSS einzuarbeiten.
 
 Begründung:
-- Schnelle Umsetzung eines konsistenten Layouts
+- Schnelle und einfache Umsetzung eines konsistenten Layouts
 - Responsives Design
 - Gute Unterstützung für Formulare und Standard-Komponenten
 
