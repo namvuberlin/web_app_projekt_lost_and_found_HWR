@@ -50,15 +50,22 @@ Suchender
 1. **Trigger:** Tim merkt nach der Vorlesung, dass sein Handy fehlt.
 2. **Access:** Er öffnet die Lost & Found HWR Website.
 3. **Login/Registrierung:** Tim loggt sich ein (oder registriert sich).
-4. **Search:** Er geht auf Found Items und schaut die Liste der Funde durch
-5. **Match:** Tim findet einen passenden Eintrag (Titel + Beschreibung) und öffnet den Post.
-6. **Kontakt:** Tim schreibt dem Finder über die Messages Funktion.
-7. **Übergabe:** Beide vereinbaren einen Treffpunkt am Campus und das Handy wird zurückgegeben.
-8. **Abschluss:** Der Finder setzt den Post auf closed oder löscht ihn
+4. **Search:** Tim geht auf Found Items und prüft die Liste (z. B. nach Ort „Haus B“).
+5. **Wenn Match vorhanden:** Tim öffnet den passenden Post (Titel + Beschreibung) und schreibt dem Finder über Messages.
+6. **Wenn kein Match vorhanden:** Tim erstellt über Create Post einen Lost Post mit Titel, Beschreibung und Ort. Der Post erscheint unter Missing Items als open.
+7. **Kontakt & Übergabe:** Sobald sich jemand meldet (über Messages), vereinbaren sie einen Treffpunkt und das Handy wird zurückgegeben.
+8. **Abschluss:** Tim (oder der Finder) setzt den Post auf closed oder löscht ihn
 
 Finder
 
+### Finder
+
 1. **Finder findet etwas:** z. B. ein Handy in Haus B.
-2. **Login:** Finder loggt sich ein.
-3. **Create Post:** Klick auf Create Lost/Found Post → Typ Found auswählen → Titel/Beschreibung/Location eintragen → Post wird als open erstellt.
-4. **Rückgabe:** Nach Kontakt über Messages erfolgt die Übergabe → Post wird geschlossen oder gelöscht.
+2. **Access:** Er öffnet die Lost & Found HWR Website.
+3. **Login/Registrierung:** Der Finder loggt sich ein (oder registriert sich).
+4. **Create Post:** Er klickt auf Create Post und wählt den Typ Found.
+5. **Details:** Er trägt Titel, Beschreibung und Fundort (z. B. „Haus B“) ein und speichert den Post. Der Post wird als open erstellt und erscheint unter Found Items.
+6. **Kontakt:** Der Besitzer meldet sich über Messages beim Finder.
+7. **Übergabe:** Beide vereinbaren einen Treffpunkt und der Gegenstand wird übergeben.
+8. **Abschluss:** Der Finder setzt den Post auf closed oder löscht ihn
+
