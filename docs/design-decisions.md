@@ -102,7 +102,7 @@ Wir trennen die Darstellung in zwei eigene Seiten:
 - **Missing Items**: Liste für verlorene Gegenstände
 - **Found Items**: Liste für gefundene Gegenstände
 
-Vorteil: klare Nutzerführung, weniger Verwirrung, einfachere Filter/Sortierung pro Kategorie.  
+Vorteil: klare Nutzerführung, weniger Verwirrung.
 
 ### Regarded options
 
