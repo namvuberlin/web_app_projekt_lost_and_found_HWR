@@ -154,7 +154,7 @@ Vorteile:
 
 ---
 
-# 05:SQLite
+## 05:SQLite
 
 ### Meta
 
@@ -198,7 +198,7 @@ Wir haben diese Optionen verglichen:
 
 ---
 
-# 06: Nachrichtenfunktion für Kontaktaufnahme
+## 06: Nachrichtenfunktion für Kontaktaufnahme
 
 ### Meta
 
