@@ -195,3 +195,32 @@ Wir haben diese Optionen verglichen:
 | **Setup** | ✔️ lokal, schnell startbar | ✔️ lokal, schnell startbar | ❌ Server/Config nötig |
 | **Code-Struktur** | ✔️ Models & Relations klar | ❌ SQL verteilt im Code | ✔️ möglich, aber mehr Aufwand |
 | **Geeignet für Kursprojekt** | ✔️ ja | ✔️ ja | ❌ unnötig komplex |
+
+---
+
+## 06: Nachrichtenfunktion für Kontaktaufnahme
+
+### Meta
+
+Status
+: **Work in progress** - Decided - Obsolete
+
+Updated
+: DD-MMM-YYYY
+
+### Problem statement
+
+Damit ein verlorener oder gefundener Gegenstand schnell zurückgegeben werden kann, müssen Nutzer einfach Kontakt aufnehmen können.
+
+### Decision
+
+Wir bieten eine einfache Nachrichten-/Kontaktfunktion an, bei der Nutzer eine Nachricht schreiben und Kontaktdaten hinterlassen können.
+Wir verzichten bewusst auf einen Live-Chat, um die Lösung simpel, übersichtlich und leicht wartbar zu halten.
+
+### Regarded options
+
+| Kriterium | Keine Nachrichten | Nachricht pro Post (gewählt) | Chat |
+| --- | --- | --- | --- |
+| **Kontakt aufnehmen** | ❌ umständlich | ✔️ direkt möglich | ✔️ direkt möglich |
+| **Komplexität** | ✔️ sehr niedrig | ✔️ niedrig | ❌ hoch |
+| **Wartbarkeit** | ✔️ einfach | ✔️ einfach | ❌ aufwendiger |
