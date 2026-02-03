@@ -78,6 +78,42 @@ Begründung:
 | **Responsive Design** | ❌ extra Aufwand | ✔️ eingebaut (Grid/Breakpoints) |
 | **Wartbarkeit** | ❌ mehr eigener Code | ✔️ weniger eigener CSS-Code |
 
+---
 
+## 03: Getrennte Views für Missing & Found Items
 
+### Meta
+
+Status
+: **Work in progress** - Decided - Obsolete
+
+Updated
+: DD-MMM-YYYY
+
+### Problem statement
+
+User suchen entweder verlorene Gegenstände oder melden gefundene Gegenstände.  
+Wenn alles in einer Liste vermischt ist, wird die Orientierung schlechter und Filterung/Navigation wird unklar.
+
+### Decision
+
+Wir trennen die Darstellung in zwei eigene Seiten:
+
+- **Missing Items**: Liste für verlorene Gegenstände
+- **Found Items**: Liste für gefundene Gegenstände
+
+Vorteil: klare Nutzerführung, weniger Verwirrung, einfachere Filter/Sortierung pro Kategorie.  
+
+### Regarded options
+
+Wir haben zwei Möglichkeiten betrachtet:
+
++ **Eine gemeinsame Seite** (Missing & Found zusammen)
++ **Zwei getrennte Seiten** (Missing-Seite und Found-Seite) ✅
+
+| Criterion | Eine Seite (gemischt) | Zwei Seiten (gewählt) |
+| --- | --- | --- |
+| **Schnell ans Ziel** | ❌ erst suchen/scrollen | ✔️ direkt richtige Liste |
+| **Orientierung** | ❌ unübersichtlicher | ✔️ klare Trennung |
+| **Umsetzung** | ✔️ einfach | ✔️ einfach |
 
