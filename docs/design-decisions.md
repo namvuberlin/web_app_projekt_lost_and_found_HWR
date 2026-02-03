@@ -106,11 +106,6 @@ Vorteil: klare Nutzerführung, weniger Verwirrung.
 
 ### Regarded options
 
-Wir haben zwei Möglichkeiten betrachtet:
-
-+ **Eine gemeinsame Seite** (Missing & Found zusammen)
-+ **Zwei getrennte Seiten** (Missing-Seite und Found-Seite) ✅
-
 | Criterion | Eine Seite (gemischt) | Zwei Seiten (gewählt) |
 | --- | --- | --- |
 | **Schnell ans Ziel** | ❌ erst suchen/scrollen | ✔️ direkt richtige Liste |
