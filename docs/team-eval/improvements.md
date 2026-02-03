@@ -16,3 +16,5 @@ nav_order: 2
 + ToC
 {: toc }
 </details>
+
+Rückblickend würden wir die Umsetzung deutlich früher beginnen. Der Fokus muss beim nächsten Mal auf einem MVP liegen. Wir sollten erst die Grundfunktionen implementieren, bevor wir uns an Features wie den Bilder-Upload wagen. Zudem haben wir gelernt, dass feste, regelmäßige Treffen wichtig sind, um Aufgaben zu erledigen. Ein früherer Start und eine bessere Abstimmung machen den gesamten Entwicklungsprozess deutlich reibungsloser.
