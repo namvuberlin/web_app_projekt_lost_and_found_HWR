@@ -45,4 +45,20 @@ Funktionen:
 
 ## Customer journey
 
-[Illustrate the customer journey, from the app's entry point to a completed task. You might want to show the customer journey as (schematic) screen flows.]
+Beispiel: Tim verliert sein Handy in Haus B (Suchender)
+
+1. **Trigger:** Tim merkt nach der Vorlesung, dass sein Handy fehlt.
+2. **Access:** Er öffnet Lost & Found HWR auf dem Handy.
+3. **Login/Registrierung:** Tim loggt sich ein (oder registriert sich).
+4. **Search:** Er geht auf Found Items und schaut die Liste der Funde durch
+5. **Match:** Tim findet einen passenden Eintrag (Titel + Beschreibung) und öffnet den Post.
+6. **Kontakt:** Tim schreibt dem Finder über die Messages Funktion.
+7. **Übergabe:** Beide vereinbaren einen Treffpunkt am Campus und das Handy wird zurückgegeben.
+8. **Abschluss:** Der Finder setzt den Post auf closed oder löscht ihn
+
+Alternative: Finder meldet einen Fund
+
+1. **Finder findet etwas:** z. B. ein Handy in Haus B.
+2. **Login:** Finder loggt sich ein.
+3. **Create Post:** Klick auf Create Lost/Found Post → Typ „FOUND“ auswählen → Titel/Beschreibung/Location eintragen → Post wird als open erstellt.
+4. **Rückgabe:** Nach Kontakt über Messages erfolgt die Übergabe → Post wird geschlossen oder gelöscht.
