@@ -45,7 +45,7 @@ Funktionen:
 
 ## Customer journey
 
-Beispiel: Tim verliert sein Handy in Haus B (Suchender)
+Suchender
 
 1. **Trigger:** Tim merkt nach der Vorlesung, dass sein Handy fehlt.
 2. **Access:** Er öffnet Lost & Found HWR auf dem Handy.
@@ -56,7 +56,7 @@ Beispiel: Tim verliert sein Handy in Haus B (Suchender)
 7. **Übergabe:** Beide vereinbaren einen Treffpunkt am Campus und das Handy wird zurückgegeben.
 8. **Abschluss:** Der Finder setzt den Post auf closed oder löscht ihn
 
-Alternative: Finder meldet einen Fund
+Finder
 
 1. **Finder findet etwas:** z. B. ein Handy in Haus B.
 2. **Login:** Finder loggt sich ein.
