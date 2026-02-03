@@ -112,3 +112,46 @@ Vorteil: klare Nutzerführung, weniger Verwirrung.
 | **Orientierung** | ❌ unübersichtlicher | ✔️ klare Trennung |
 | **Umsetzung** | ✔️ einfach | ✔️ einfach |
 
+---
+
+## 04: base.html (Template Layout)
+
+### Meta
+
+Status
+: **Work in progress** - Decided - Obsolete
+
+Updated
+: DD-MMM-YYYY
+
+### Problem statement
+
+Viele Seiten teilen sich UI-Bausteine wie:
+- Navigation / Header
+- Footer
+- Einbindung von Bootstrap/CSS
+- Flash-Messages
+
+Wenn jede Seite das mehrfach enthält, entsteht Duplicate Code und Inkonsistenz bei Änderungen.
+
+### Decision
+
+Wir nutzen eine zentrale **`base.html`** als Layout-Template und lassen andere Templates davon **erben** (Jinja2 `extends` + `block`).
+
+Vorteile:
+- **DRY-Prinzip** (weniger Wiederholung)
+- Änderungen am Layout nur an einer Stelle
+- Einheitliches UI über alle Seiten
+
+*Decision was taken by:* (GitHub-Handles ergänzen)
+
+### Regarded options
+
++ Jede Seite hat eigenes HTML-Gerüst (kopieren/einfügen)
++ `base.html` Layout mit Template-Vererbung ✅
+
+| Criterion | Copy/Paste Layout | base.html (gewählt) |
+| --- | --- | --- |
+| Wartbarkeit | ❌ | ✔️ |
+| Konsistenz | ❌ | ✔️ |
+| Aufwand initial | ✔️ | ✔️ |
