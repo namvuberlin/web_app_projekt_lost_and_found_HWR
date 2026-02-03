@@ -28,7 +28,7 @@ Der aktuelle Prozess ist kompliziert und unübersichtlich:
 ## Our solution
 
 Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
-Sowohl Finder als auch *Suchende* können sich anmelden und Posts erstellen.
+Sowohl Finder als auch Suchende können sich anmelden und Posts erstellen.
 
 Funktionen:
 - 24/7 erreichbar und von überall abrufbar
