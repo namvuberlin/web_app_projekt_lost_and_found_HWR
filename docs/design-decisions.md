@@ -186,7 +186,7 @@ SQLAlchemy/ORM
 
 Wir haben diese Optionen verglichen:
 
-+ SQLite + Flask-SQLAlchemy (ORM) ✅
++ SQLite + Flask-SQLAlchemy (ORM)
 + SQLite + Plain SQL
 + MySQL/PostgreSQL (Server-Datenbank)
 
