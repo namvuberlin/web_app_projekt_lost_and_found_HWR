@@ -146,7 +146,7 @@ Vorteile:
 
 ### Regarded options
 
-| Criterion | Copy/Paste Layout | base.html (gewählt) |
+| Kriterium | Copy/Paste Layout | base.html (gewählt) |
 | --- | --- | --- |
 | Wartbarkeit | ❌ | ✔️ |
 | Konsistenz | ❌ | ✔️ |
