@@ -19,7 +19,7 @@ nav_order: 1
 
 ## Erreichte Ziele
 
-Die Web-App läuft lokal und die wichtigsten Funktionen sind implementiert. Unser Fokus lag dabei auf der Usability. Der Ablauf sollte für Nutzer schnell und selbsterklärend sein. Gegenstände können als Lost oder Found gemeldet werden und der User kann direkt über die Plattform Kontakt aufnehmen. Ist ein Gegenstand zurückgegeben, setzt man den Status einfach auf Closed. Das UI haben wir bewusst simpel gehalten, damit man sich sofort zurechtfindet. Im Hintergrund hat uns die Arbeit mit GitHub sehr geholfen, den Überblick nicht zu verlieren
+Die Web-App läuft lokal und die wichtigsten Funktionen sind implementiert. Unser Fokus lag dabei auf der Usability. Der Ablauf sollte für Nutzer schnell und selbsterklärend sein. Gegenstände können als Lost oder Found gemeldet werden und der User kann direkt über die Plattform Kontakt aufnehmen. Ist ein Gegenstand zurückgegeben, setzt man den Status einfach auf Closed. Das UI haben wir bewusst simpel gehalten, damit man sich sofort zurechtfindet. Im Hintergrund hat uns die Arbeit mit GitHub sehr geholfen, den Überblick nicht zu verlieren.
 
 ---
 
