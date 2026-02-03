@@ -41,7 +41,7 @@ Funktionen:
 ## Target user
 
 - Studierende der HWR Berlin
-- Optional: Mitarbeitende (z. B. Pförtner), die Fundmeldungen einsehen möchten
+- Optional: Mitarbeitende (z. B. Pförtner), die Fundmeldungen einsehen/bearbeiten möchten
 
 ## Customer journey
 
