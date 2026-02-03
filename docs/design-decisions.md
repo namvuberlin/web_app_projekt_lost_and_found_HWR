@@ -151,3 +151,48 @@ Vorteile:
 | Wartbarkeit | ❌ | ✔️ |
 | Konsistenz | ❌ | ✔️ |
 | Aufwand initial | ✔️ | ✔️ |
+
+---
+
+# 05:SQLite
+
+### Meta
+
+Status
+: **Work in progress** - Decided - Obsolete
+
+Updated
+: DD-MMM-YYYY
+
+### Problem statement
+
+Welche Datenbank nutzen wir für unsere Lost & Found HWR Web-App?
+
+Wir müssen Posts (Missing/Found) und User-Accounts/Rollen (Student/Admin) speichern.
+
+### Decision
+
+Wir verwenden SQLite als Datenbank 
+
+SQLite passt perfekt, weil:
+- keine separate Installation/Server nötig ist
+- es direkt mit Python/Flask funktioniert
+- es für unsere Datenmenge ausreicht
+
+SQLAlchemy/ORM
+- bildet Tabellen als Python-Klassen ab (z. B. User, ItemPost) und macht Beziehungen klar (Foreign Keys, Relationships).
+
+### Regarded options
+
+Wir haben diese Optionen verglichen:
+
++ SQLite + Flask-SQLAlchemy (ORM) ✅
++ SQLite + Plain SQL
++ MySQL/PostgreSQL (Server-Datenbank)
+
+| Kriterium | SQLite + ORM (gewählt) | SQLite + Plain SQL | MySQL/PostgreSQL |
+| --- | --- | --- | --- |
+| **Setup** | ✔️ lokal, schnell startbar | ✔️ lokal, schnell startbar | ❌ Server/Config nötig |
+| **Code-Struktur** | ✔️ Models & Relations klar | ❌ SQL verteilt im Code | ✔️ möglich, aber mehr Aufwand |
+| **Wartbarkeit** | ✔️ weniger Boilerplate | ❔ hängt stark von Disziplin ab | ❌ höherer Betriebsaufwand |
+| **Geeignet für Kursprojekt** | ✔️ ja | ✔️ ja | ❌ unnötig komplex |
