@@ -16,7 +16,7 @@ nav_order: 3
 {: toc }
 </details>
 
-## 01: [Title]
+## 01: Rollenbasierte Zugriffe (Student / Admin)
 
 ### Meta
 
@@ -28,65 +28,58 @@ Updated
 
 ### Problem statement
 
-[Describe the problem to be solved or the goal to be achieved. Include relevant context information.]
+In einer Lost-&-Found-App sind bestimmte Aktionen sensibel (z. B. Posts löschen).  
+Wenn jede*r alles ändern/löschen kann, sinkt die Sichherheit und es entstehen Missbrauchsversuche.
+
 
 ### Decision
 
-[Describe **which** design decision was taken for **what reason** and by **whom**.]
+Wir unterscheiden zwei Rollen:
+
+- **Student**: kann Posts erstellen und eigene Posts verwalten (z. B. Status ändern / bearbeiten).
+- **Admin (Pförtner)**: kann Posts moderieren und bei Bedarf löschen/abschließen.
 
 ### Regarded options
 
-[Describe any possible design decision that will solve the problem. Assess these options, e.g., via a simple pro/con list.]
++ **Keine Rollen** (alle dürfen alles) - Missbrauch
++ **Zwei Rollen** (Student/Admin) - unterschiedliche Zugriffsrechte
 
 ---
 
-## [Example, delete this section] 01: How to access the database - SQL or SQLAlchemy 
+## 02: Bootstrap
 
 ### Meta
 
 Status
-: Work in progress - **Decided** - Obsolete
+: **Work in progress** - Decided - Obsolete
 
 Updated
-: 30-Jun-2024
+: DD-MMM-YYYY
 
 ### Problem statement
 
-Should we perform database CRUD (create, read, update, delete) operations by writing plain SQL or by using SQLAlchemy as object-relational mapper?
-
-Our web application is written in Python with Flask and connects to an SQLite database. To complete the current project, this setup is sufficient.
-
-We intend to scale up the application later on, since we see substantial business value in it.
-
-
-
-Therefore, we will likely:
-Therefore, we will likely:
-Therefore, we will likely:
-
-+ Change the database schema multiple times along the way, and
-+ Switch to a more capable database system at some point.
+Wir benötigen ein responsives UI (Buttons, Forms, Cards, Navigation), ohne viel eigenes CSS zu schreiben und ohne zusätzliche Frontend-Frameworks.
 
 ### Decision
 
-We stick with plain SQL.
+Wir nutzen Bootstrap als UI-Framework.
 
-Our team still has to come to grips with various technologies new to us, like Python and CSS. Adding another element to our stack will slow us down at the moment.
-
-Also, it is likely we will completely re-write the app after MVP validation. This will create the opportunity to revise tech choices in roughly 4-6 months from now.
-*Decision was taken by:* github.com/joe, github.com/jane, github.com/maxi
+Begründung:
+- Schnelle Umsetzung eines konsistenten Layouts
+- Responsives Design
+- Gute Unterstützung für Formulare und Standard-Komponenten
 
 ### Regarded options
 
-We regarded two alternative options:
++ Eigenes CSS komplett selbst schreiben
++ Bootstrap 
++ Anderes CSS-Framework (z. B. Tailwind) – zusätzlicher Lern-/Setup-Aufwand
 
-+ Plain SQL
-+ SQLAlchemy
+| Criterion | Eigenes CSS | Bootstrap (gewählt) | Alternatives Framework |
+| --- | --- | --- | --- |
+| Geschwindigkeit | ❌ | ✔️ | ❔ |
+| Konsistenz | ❔ | ✔️ | ✔️ |
+| Lernkurve | ✔️ | ✔️ | ❔ |
 
-| Criterion | Plain SQL | SQLAlchemy |
-| --- | --- | --- |
-| **Know-how** | ✔️ We know how to write SQL | ❌ We must learn ORM concept & SQLAlchemy |
-| **Change DB schema** | ❌ SQL scattered across code | ❔ Good: classes, bad: need Alembic on top |
-| **Switch DB engine** | ❌ Different SQL dialect | ✔️ Abstracts away DB engine |
 
----
+
