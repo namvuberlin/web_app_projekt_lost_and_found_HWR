@@ -31,5 +31,5 @@ Wir haben die Hauptfunktionalität unserer Plattform erfolgreich umgesetzt und e
 ## Verpasste Ziele
 Obwohl die Basis funktioniert, konnten wir einige Features nicht mehr umsetzen, die die App im Alltag noch praktischer gemacht hätten. Hauptgründe waren Zeit, Priorisierung und das Vermeiden unnötiger Komplexität.
 
-- **Stärkere Fehlermeldungen**: Mehr Hinweise bei ungültigen Eingaben würden die Nutzerführung verbessern.
+- **Stärkere Fehlermeldungen**: Mehr Hinweise bei unvollständigen Eingaben und klarere Fehlermeldungen.
 - **Bilder/Uploads**: Fotos würden die Wiedererkennung stark erhöhen, wurden aber aus Aufwandgründen zurückgestellt.
