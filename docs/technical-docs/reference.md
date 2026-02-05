@@ -5,17 +5,15 @@ nav_order: 3
 ---
 
 {: .label }
-[Jane Dane]
+[Lost & Found Web App]
 
 {: .no_toc }
 # Reference documentation
 
 {: .attention }
-> This page collects internal functions, routes with their functions, and APIs (if any).
-> 
-> See [Uber](https://developer.uber.com/docs/drivers/references/api) or [PayPal](https://developer.paypal.com/api/rest/) for exemplary high-quality API reference documentation.
->
-> You may delete this `attention` box.
+> This page collects internal routes, their functions, and database interactions
+> of the Lost & Found web application.
+> The application is implemented using Flask, Jinja2, SQLAlchemy, and SQLite.
 
 <details open markdown="block">
 {: .text-delta }
@@ -24,56 +22,72 @@ nav_order: 3
 {: toc }
 </details>
 
-## [Section / module]
-
-### `function_definition()`
-
-**Route:** `/route/`
-
-**Methods:** `POST` `GET` `PATCH` `PUT` `DELETE`
-
-**Purpose:** [Short explanation of what the function does and why]
-
-**Sample output:**
-
-[Show an image, string output, or similar illustration -- or write NONE if function generates no output]
-
 ---
 
 ## Authentication
 
 ### `login()`
 
-**Route:** `/login`
-
+**Route:** `/login`  
 **Methods:** `GET`, `POST`
 
 **Purpose:**  
-Authentifiziert einen Student- oder Admin-Benutzer anhand von Benutzername und Passwort.
+Authentifiziert einen Student-Benutzer anhand von Benutzername und Passwort.
 
 **Database interaction:**  
 - READ `users`
 
 **Sample output:**  
-Login-Formular oder Weiterleitung zum Dashboard
+Login form or redirect to student dashboard
+
+---
+
+### `admin_login()`
+
+**Route:** `/admin/login`  
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Authentifiziert einen Administrator-Benutzer.
+
+**Database interaction:**  
+- READ `users`
+
+**Sample output:**  
+Admin login form or redirect to admin dashboard
 
 ---
 
 ### `register()`
 
-**Route:** `/register`
-
+**Route:** `/register`  
 **Methods:** `GET`, `POST`
 
 **Purpose:**  
-Registriert einen neuen Student-Benutzer und speichert die Zugangsdaten sicher in der Datenbank.
+Registriert einen neuen Student-Benutzer inklusive Matrikelnummer und Hochschul-E-Mail.
 
 **Database interaction:**  
 - READ `users`  
 - WRITE `users`
 
 **Sample output:**  
-Registrierungsformular oder erfolgreiche Weiterleitung
+Registration form or redirect to login page
+
+---
+
+### `logout()`
+
+**Route:** `/logout`  
+**Methods:** `GET`
+
+**Purpose:**  
+Beendet die aktuelle Sitzung durch Löschen der Session.
+
+**Database interaction:**  
+- NONE
+
+**Sample output:**  
+Redirect to login page
 
 ---
 
@@ -81,70 +95,174 @@ Registrierungsformular oder erfolgreiche Weiterleitung
 
 ### `student_dashboard()`
 
-**Route:** `/dashboard`
-
+**Route:** `/student/dashboard`  
 **Methods:** `GET`
 
 **Purpose:**  
-Zeigt das Student-Dashboard mit einer Übersicht über eigene Beiträge und aktuelle Einträge.
+Zeigt eine Übersicht über:
+- eigene Beiträge
+- offene Beiträge
+- Mitteilungen der aktuellen Woche
+- zuletzt erstellte Beiträge
 
 **Database interaction:**  
-- READ `items`  
-- READ `claims`
+- READ `item_posts`  
+- READ `post_interests`
 
 **Sample output:**  
-Student-Dashboard-Ansicht
+Student dashboard view
 
 ---
 
-### `list_items()`
+### `student_lost()`
 
-**Route:** `/items`
-
+**Route:** `/student/lost`  
 **Methods:** `GET`
 
 **Purpose:**  
-Listet alle gemeldeten verlorenen und gefundenen Gegenstände auf.
+Listet alle als verloren gemeldeten Gegenstände auf.
 
 **Database interaction:**  
-- READ `items`
+- READ `item_posts`
 
 **Sample output:**  
-Liste der Lost- und Found-Items
+Table view of lost items
 
 ---
 
-### `create_item()`
+### `student_found()`
 
-**Route:** `/items/create`
+**Route:** `/student/found`  
+**Methods:** `GET`
 
+**Purpose:**  
+Listet alle als gefunden gemeldeten Gegenstände auf.
+
+**Database interaction:**  
+- READ `item_posts`
+
+**Sample output:**  
+Table view of found items
+
+---
+
+### `student_new_post()`
+
+**Route:** `/student/post/new`  
 **Methods:** `GET`, `POST`
 
 **Purpose:**  
-Ermöglicht es einem Studenten, einen neuen Verlust- oder Fundbeitrag zu erstellen.
+Erstellt einen neuen Fund- oder Verlustbeitrag.
 
 **Database interaction:**  
-- WRITE `items`
+- WRITE `item_posts`
 
 **Sample output:**  
-Formular zur Item-Erstellung oder Bestätigung
+Post creation form
 
 ---
 
-### `claim_item(item_id)`
+### `student_post_detail(post_id)`
 
-**Route:** `/items/<int:item_id>/claim`
+**Route:** `/student/post/<int:post_id>`  
+**Methods:** `GET`
 
+**Purpose:**  
+Zeigt eine Detailansicht eines Beitrags inklusive Erstellerdaten
+und eingegangener Mitteilungen.
+
+**Database interaction:**  
+- READ `item_posts`  
+- READ `users`  
+- READ `post_interests`
+
+**Sample output:**  
+Item detail view
+
+---
+
+### `student_post_respond(post_id)`
+
+**Route:** `/student/post/<int:post_id>/respond`  
 **Methods:** `POST`
 
 **Purpose:**  
-Ermöglicht es einem Studenten, einen Anspruch auf einen Gegenstand zu stellen.
+Ermöglicht es einem Benutzer, sich auf einen Gegenstand zu melden
+und eine Nachricht zu hinterlassen.
 
 **Database interaction:**  
-- WRITE `claims`
+- WRITE `post_interests`
 
 **Sample output:**  
-Anspruch wurde eingereicht (Status: pending)
+Redirect to item detail view
+
+---
+
+### `student_edit_post(post_id)`
+
+**Route:** `/student/post/<int:post_id>/edit`  
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Bearbeitet einen eigenen Beitrag (Titel, Beschreibung, Ort, Status).
+
+**Database interaction:**  
+- READ `item_posts`  
+- WRITE `item_posts`
+
+**Sample output:**  
+Edit form or redirect to dashboard
+
+---
+
+### `student_delete_post(post_id)`
+
+**Route:** `/student/post/<int:post_id>/delete`  
+**Methods:** `POST`
+
+**Purpose:**  
+Löscht einen eigenen Beitrag.
+
+**Database interaction:**  
+- DELETE `item_posts`
+
+**Sample output:**  
+Redirect to student dashboard
+
+---
+
+### `student_messages()`
+
+**Route:** `/student/messages`  
+**Methods:** `GET`
+
+**Purpose:**  
+Zeigt alle Mitteilungen an, die andere Benutzer zu den eigenen Beiträgen
+gesendet haben.
+
+**Database interaction:**  
+- READ `post_interests`  
+- READ `users`
+
+**Sample output:**  
+Messages overview
+
+---
+
+### `student_profile()`
+
+**Route:** `/student/profile`  
+**Methods:** `GET`
+
+**Purpose:**  
+Zeigt alle Profildaten des angemeldeten Studenten.
+
+**Database interaction:**  
+- READ `users`  
+- READ `app_settings`
+
+**Sample output:**  
+Student profile view
 
 ---
 
@@ -152,36 +270,131 @@ Anspruch wurde eingereicht (Status: pending)
 
 ### `admin_dashboard()`
 
-**Route:** `/admin/dashboard`
-
+**Route:** `/admin/dashboard`  
 **Methods:** `GET`
 
 **Purpose:**  
-Zeigt eine administrative Übersicht über Beiträge, offene Ansprüche und Benutzer.
+Zeigt eine administrative Gesamtübersicht über Beiträge und Benutzer.
 
 **Database interaction:**  
-- READ `items`  
-- READ `claims`  
+- READ `item_posts`  
 - READ `users`
 
 **Sample output:**  
-Admin-Dashboard-Ansicht
+Admin dashboard view
 
 ---
 
-### `review_claim(claim_id)`
+### `admin_posts()`
 
-**Route:** `/admin/claims/<int:claim_id>`
+**Route:** `/admin/posts`  
+**Methods:** `GET`
 
+**Purpose:**  
+Listet alle Beiträge mit Filter- und Suchfunktionen.
+
+**Database interaction:**  
+- READ `item_posts`
+
+**Sample output:**  
+Admin post list
+
+---
+
+### `admin_posts_new()`
+
+**Route:** `/admin/posts/new`  
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Erstellt einen neuen Beitrag als Administrator.
+
+**Database interaction:**  
+- WRITE `item_posts`
+
+**Sample output:**  
+Admin post creation form
+
+---
+
+### `admin_posts_edit(post_id)`
+
+**Route:** `/admin/posts/<int:post_id>/edit`  
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Bearbeitet bestehende Beiträge unabhängig vom Ersteller.
+
+**Database interaction:**  
+- READ `item_posts`  
+- WRITE `item_posts`
+
+**Sample output:**  
+Admin edit form
+
+---
+
+### `admin_posts_delete(post_id)`
+
+**Route:** `/admin/posts/<int:post_id>/delete`  
 **Methods:** `POST`
 
 **Purpose:**  
-Ermöglicht es einem Administrator, einen Anspruch zu genehmigen oder abzulehnen.
+Löscht einen Beitrag aus dem System.
 
 **Database interaction:**  
-- WRITE `claims`  
-- WRITE `items`
+- DELETE `item_posts`
 
 **Sample output:**  
-Anspruch wurde genehmigt oder abgelehnt
+Redirect to admin post list
 
+---
+
+### `admin_users()`
+
+**Route:** `/admin/users`  
+**Methods:** `GET`
+
+**Purpose:**  
+Listet alle registrierten Benutzer.
+
+**Database interaction:**  
+- READ `users`
+
+**Sample output:**  
+User management table
+
+---
+
+### `admin_user_delete(user_id)`
+
+**Route:** `/admin/users/<int:user_id>/delete`  
+**Methods:** `POST`
+
+**Purpose:**  
+Löscht einen Student-Benutzer aus dem System.
+Administratoren können nicht gelöscht werden.
+
+**Database interaction:**  
+- DELETE `users`
+
+**Sample output:**  
+Redirect to user list
+
+---
+
+### `admin_settings()`
+
+**Route:** `/admin/settings`  
+**Methods:** `GET`, `POST`
+
+**Purpose:**  
+Verwaltet globale Anwendungseinstellungen wie Stationsname
+und Kontakt-E-Mail-Adresse.
+
+**Database interaction:**  
+- READ `app_settings`  
+- WRITE `app_settings`
+
+**Sample output:**  
+Settings form
