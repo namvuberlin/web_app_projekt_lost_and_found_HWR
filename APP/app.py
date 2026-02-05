@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, render_template, request, redirect, url_for, session
 from datetime import datetime, timedelta
 from db import db, User, ItemPost, PostInterest, AppSettings
@@ -476,17 +475,22 @@ def student_edit_post(post_id: int):
         title = (request.form.get("title") or "").strip()
         description = (request.form.get("description") or "").strip()
         location = (request.form.get("location") or "").strip()
+        status = (request.form.get("status") or "open").strip().lower()
 
         if not title or not description:
             error = "Title and description are required."
+        elif status not in ("open", "claimed", "closed"):
+            error = "Invalid status."
         else:
             post.title = title
             post.description = description
             post.location = location or None
+            post.status = status              
             db.session.commit()
             return redirect(url_for("student_dashboard"))
 
     return render_template("student/post_form.html", mode="edit", error=error, post=post)
+
 
 
 @app.route("/student/post/<int:post_id>/delete", methods=["POST"])
