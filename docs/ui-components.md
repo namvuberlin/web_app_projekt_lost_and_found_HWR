@@ -15,54 +15,53 @@ nav_order: 99
 > ---
 > ```
 
-# UI Screens
+# UI components
 
-This page documents the main UI screens of the Lost & Found application.
+The [Just the Docs documentation](https://just-the-docs.github.io/just-the-docs/docs/ui-components) details more UI components.
 
----
+For a quick reference of the markdown syntax, visit [this page](https://github.com/just-the-docs/just-the-docs/blob/main/docs/index-test.md?plain=1).
 
 ## Student UI
 
 ### Student Login
-![student_login]({{ site.baseurl }}/docs/assets/images/student_login.png)
+![student_login](assets/images/student_login.png)
 
 ### Student Dashboard
-![student_dashboard]({{ site.baseurl }}/docs/assets/images/student_dashboard.png)
+![student_dashboard](assets/images/student_dashboard.png)
 
 ### Missing Items (Lost Posts)
-![student_missingitems]({{ site.baseurl }}/docs/assets/images/student_missingitems.png)
+![student_missingitems](assets/images/student_missingitems.png)
 
 ### Found Items (Found Posts)
-![student_founditems]({{ site.baseurl }}/docs/assets/images/student_founditems.png)
+![student_founditems](assets/images/student_founditems.png)
 
 ### Create Post
-![student_createpost]({{ site.baseurl }}/docs/assets/images/student_createpost.png)
+![student_createpost](assets/images/student_createpost.png)
 
 ### Messages
-![student_messages]({{ site.baseurl }}/docs/assets/images/student_messages.png)
+![student_messages](assets/images/student_messages.png)
 
 ### Profile
-![student_profile]({{ site.baseurl }}/docs/assets/images/student_profile.png)
+![student_profile](assets/images/student_profile.png)
 
 ---
 
 ## Admin UI
 
 ### Admin Login
-![admin_login]({{ site.baseurl }}/docs/assets/images/admin_login.png)
+![admin_login](assets/images/admin_login.png)
 
 ### Admin Dashboard
-![admin_dashboard]({{ site.baseurl }}/docs/assets/images/admin_dashboard.png)
+![admin_dashboard](assets/images/admin_dashboard.png)
 
 ### Posts
-![admin_posts]({{ site.baseurl }}/docs/assets/images/admin_posts.png)
+![admin_posts](assets/images/admin_posts.png)
 
 ### Users
-![admin_users]({{ site.baseurl }}/docs/assets/images/admin_users.png)
+![admin_users](assets/images/admin_users.png)
 
 ### Settings
-![admin_settings]({{ site.baseurl }}/docs/assets/images/admin_settings.png)
+![admin_settings](assets/images/admin_settings.png)
 
 ### Edit Post
-![admin_editpost]({{ site.baseurl }}/docs/assets/images/admin_editpost.png)
-
+![admin_editpost](assets/images/admin_editpost.png)
