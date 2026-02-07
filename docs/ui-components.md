@@ -23,36 +23,50 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 
 ## Student UI
 
+ 
+
 ### Student Login
+
 ![student_login](assets/images/student_login.png)
 
-### Student Dashboard
-![student_dashboard](assets/images/student_dashboard.png)
+ 
 
 ### Missing Items (Lost Posts)
 ![student_missingitems](assets/images/student_missingitems.png)
 
+
 ### Found Items (Found Posts)
 ![student_founditems](assets/images/student_founditems.png)
+
 
 ### Create Post
 ![student_createpost](assets/images/student_createpost.png)
 
+
 ### Messages
 ![student_messages](assets/images/student_messages.png)
+
 
 ### Profile
 ![student_profile](assets/images/student_profile.png)
 
----
+ 
 
 ## Admin UI
 
+ 
+
 ### Admin Login
+
 ![admin_login](assets/images/admin_login.png)
 
+ 
+
 ### Admin Dashboard
+
 ![admin_dashboard](assets/images/admin_dashboard.png)
+
+ 
 
 ### Posts
 ![admin_posts](assets/images/admin_posts.png)
@@ -65,3 +79,39 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 
 ### Edit Post
 ![admin_editpost](assets/images/admin_editpost.png)
+
+
+## Callouts
+
+{: .info }
+> This is an info callout.
+
+{: .tip }
+> This is a tip callout.
+
+{: .attention }
+> This is an attention callout.
+
+> {: .download }
+> This is a download callout.
+
+## Labels
+
+{: .label }
+[Default label]
+
+{: .label .label-green }
+[Green label]
+
+{: .label .label-red }
+[Red label]
+
+## Mermaid.js
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+```
+
+Visit the [Mermaid docs](https://mermaid.js.org/intro/) for a thorough description of the charting possibilities.
