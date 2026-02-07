@@ -10,14 +10,14 @@ nav_order: 99
 ### Grundlagen
 - [SQLite Tutorial for Beginners (YouTube)](https://www.youtube.com/watch?v=byHcYRpMgI4)
 - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) 
-- [Python sqlite3 — Official Documentation](https://docs.python.org/3/library/sqlite3.html) 
+- [Python sqlite3 - Official Documentation](https://docs.python.org/3/library/sqlite3.html) 
 - [Real Python: SQLite Tutorial](https://realpython.com/python-sqlite-sqlalchemy/)
 - [SQLite Tutorial (Foreign Keys / Constraints)](https://www.sqlitetutorial.net/sqlite-foreign-key/) 
 
 ## Bootstrap
 
 ### Videos
-- [Bootstrap 5 Tutorial – Complete Course (YouTube)](https://www.youtube.com/watch?v=4sosXZsdy-s) 
+- [Bootstrap 5 Tutorial - Complete Course (YouTube)](https://www.youtube.com/watch?v=4sosXZsdy-s) 
 - [Bootstrap Grid System Explained (YouTube)](https://www.youtube.com/watch?v=QyZPEwgogA4)
 - [Bootstrap 5 Crash Course (YouTube, Net Ninja)](https://www.youtube.com/watch?v=O_9u1P5YjVc)
 
@@ -31,7 +31,7 @@ nav_order: 99
 
 ### Tutorials
 - [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- [Corey Schafer – Flask Tutorial (YouTube Playlist)](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+- [Corey Schafer - Flask Tutorial (YouTube Playlist)](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
 - [Flask-SQLAlchemy - CRUD + Setup](https://www.youtube.com/watch?v=a1Ykeqj_D_M)
 - [Microsoft Learn: Flask Tutorial mit Visual Studio](https://learn.microsoft.com/de-de/visualstudio/python/learn-flask-visual-studio-step-01-project-solution?view=visualstudio) 
