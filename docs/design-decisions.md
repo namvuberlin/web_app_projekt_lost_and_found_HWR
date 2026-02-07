@@ -257,7 +257,7 @@ Begründung:
 Wir haben zwei Möglichkeiten verglichen:
 
 + **Nur Admin kann Status ändern** (zentral kontrolliert)
-+ **Student kann Status ändern** ✅ (schneller Abschluss)
++ **Student kann Status ändern** (schneller Abschluss)
 
 | Criterion | Nur Admin | Student (gewählt) |
 | --- | --- | --- |
