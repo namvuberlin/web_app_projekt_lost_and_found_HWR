@@ -238,19 +238,19 @@ Updated
 
 ### Problem statement
 
-Posts sollen aktuell bleiben: Wenn ein Gegenstand wieder zurückgegeben wurde, soll der Eintrag nicht weiter als „offen“ erscheinen.  
+Posts sollen aktuell bleiben. Wenn ein Gegenstand wieder zurückgegeben wurde, soll der Eintrag nicht weiter als offen erscheinen.  
 Wenn nur Admins den Status ändern dürfen, bleiben viele Posts unnötig lange offen, weil der Admin den Abschluss nicht sofort mitbekommt.
 
 ### Decision
 
-Wir erlauben **Studierenden**, den Status ihrer Posts von **open** auf **closed** (und ggf. zurück) zu ändern.
+Wir erlauben **Studierenden**, den Status ihrer Posts von **open** auf **closed** zu ändern.
 
 Begründung:
 - Die Person, die den Gegenstand gesucht/gefunden hat, weiß am schnellsten, wann der Fall erledigt ist.
-- Dadurch bleiben Listen sauber und aktuell (weniger „alte“ offene Posts).
+- Dadurch bleiben Listen sauber und aktuell (weniger alte offene Posts).
 - Admins werden entlastet, weil nicht jeder Abschluss manuell durch den Pförtner erfolgen muss.
 
-*Decision was taken by:* (GitHub-Handles ergänzen)
+*Decision was taken by:*
 
 ### Regarded options
 
