@@ -11,7 +11,8 @@ nav_order: 99
 - [SQLite Tutorial for Beginners (YouTube)](https://www.youtube.com/watch?v=byHcYRpMgI4)
 - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) 
 - [Python sqlite3 — Official Documentation](https://docs.python.org/3/library/sqlite3.html) 
-- [Real Python: SQLite Tutorial](https://realpython.com/python-sqlite-sqlalchemy/) 
+- [Real Python: SQLite Tutorial](https://realpython.com/python-sqlite-sqlalchemy/)
+
 
 ### Spezielle Probleme
 - [SQLite Tutorial (Foreign Keys / Constraints)](https://www.sqlitetutorial.net/sqlite-foreign-key/) 
@@ -32,7 +33,8 @@ nav_order: 99
 ### Tutorials
 - [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 - [Corey Schafer – Flask Tutorial (YouTube Playlist)](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
-- [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/) 
+- [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
+- [Flask-SQLAlchemy:CRUD + Setup](https://www.youtube.com/watch?v=a1Ykeqj_D_M)   
 
 ### Template-Probleme
 - [Jinja2 Template Documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/)
