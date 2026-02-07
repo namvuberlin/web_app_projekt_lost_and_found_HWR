@@ -47,7 +47,7 @@ nav_order: 99
 - [Flask-Login (Session-/Login-Management, offizielle Doku)](https://flask-login.readthedocs.io/)
 
 ## Flash Messages
-- [Flask Flash Messages (Docs](https://flask.palletsprojects.com/en/2.0.x/patterns/flashing/)
+- [Flask Flash Messages](https://flask.palletsprojects.com/en/2.0.x/patterns/flashing/)
 
 ## Weitere Hilfen
 
