@@ -42,9 +42,10 @@ nav_order: 99
 
 ### Session / Login
 - [Flask Sessions Tutorial](https://pythonbasics.org/flask-sessions/)
+- [Flask-Login (Session-/Login-Management, offizielle Doku)](https://flask-login.readthedocs.io/)
 
 ## Flash Messages
-- [Flask Flash Messages (Docs)](https://flask.palletsprojects.com/en/2.0.x/patterns/flashing/)
+- [Flask Flash Messages (Docs](https://flask.palletsprojects.com/en/2.0.x/patterns/flashing/)
 
 ## Weitere Hilfen
 
@@ -56,6 +57,7 @@ nav_order: 99
 ### Allgemeine Programmier-Hilfe
 - [W3Schools](https://www.w3schools.com/)
 - [Python.org Docs](https://docs.python.org/3/)
+- [SQLAlchemy](https://docs.sqlalchemy.org)
 
 ## ChatGPT Verlauf
 
