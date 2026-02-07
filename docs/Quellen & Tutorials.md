@@ -39,8 +39,8 @@ nav_order: 99
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/) 
 
 ### Template-Probleme
-- [Jinja2 Template Documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/) – extends / block
-- [Stack Overflow: Flask static files](https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask) – CSS lädt nicht
+- [Jinja2 Template Documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/)
+- [Stack Overflow: Flask static files](https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask) 
 - [Flask url_for('static')](https://stackoverflow.com/questions/7478366/create-dynamic-urls-in-flask-with-url-for)
 
 ## Authentication & Sessions
