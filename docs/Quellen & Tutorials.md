@@ -12,9 +12,6 @@ nav_order: 99
 - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) 
 - [Python sqlite3 — Official Documentation](https://docs.python.org/3/library/sqlite3.html) 
 - [Real Python: SQLite Tutorial](https://realpython.com/python-sqlite-sqlalchemy/)
-
-
-### Spezielle Probleme
 - [SQLite Tutorial (Foreign Keys / Constraints)](https://www.sqlitetutorial.net/sqlite-foreign-key/) 
 
 ## Bootstrap
