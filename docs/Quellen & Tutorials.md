@@ -3,7 +3,7 @@ title: Quellen & Tutorials
 nav_order: 99
 ---
 
-# Sources & Tutorials
+# Quellen & Tutorials
 
 ## Datenbank (SQLite)
 
