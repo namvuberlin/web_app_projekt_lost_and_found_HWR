@@ -224,3 +224,44 @@ Wir verzichten bewusst auf einen Live-Chat, um die Lösung simpel, übersichtlic
 | **Kontakt aufnehmen** | ❌ umständlich | ✔️ direkt möglich | ✔️ direkt möglich |
 | **Komplexität** | ✔️ sehr niedrig | ✔️ niedrig | ❌ hoch |
 | **Wartbarkeit** | ✔️ einfach | ✔️ einfach | ❌ aufwendiger |
+
+---
+## 07: Status-Änderung durch Studierende (open/closed)
+
+### Meta
+
+Status
+: **Decided**
+
+Updated
+: 03-Feb-2026
+
+### Problem statement
+
+Posts sollen aktuell bleiben: Wenn ein Gegenstand wieder zurückgegeben wurde, soll der Eintrag nicht weiter als „offen“ erscheinen.  
+Wenn nur Admins den Status ändern dürfen, bleiben viele Posts unnötig lange offen, weil der Admin den Abschluss nicht sofort mitbekommt.
+
+### Decision
+
+Wir erlauben **Studierenden**, den Status ihrer Posts von **open** auf **closed** (und ggf. zurück) zu ändern.
+
+Begründung:
+- Die Person, die den Gegenstand gesucht/gefunden hat, weiß am schnellsten, wann der Fall erledigt ist.
+- Dadurch bleiben Listen sauber und aktuell (weniger „alte“ offene Posts).
+- Admins werden entlastet, weil nicht jeder Abschluss manuell durch den Pförtner erfolgen muss.
+
+*Decision was taken by:* (GitHub-Handles ergänzen)
+
+### Regarded options
+
+Wir haben zwei Möglichkeiten verglichen:
+
++ **Nur Admin kann Status ändern** (zentral kontrolliert)
++ **Student kann Status ändern** ✅ (schneller Abschluss)
+
+| Criterion | Nur Admin | Student (gewählt) |
+| --- | --- | --- |
+| **Aktualität der Posts** | ❌ kann verzögert sein | ✔️ schnell aktuell |
+| **Aufwand für Admin** | ❌ mehr Arbeit | ✔️ weniger Arbeit |
+| **Kontrolle** | ✔️ maximal | ✔️ ausreichend (nur eigener Post) |
+
