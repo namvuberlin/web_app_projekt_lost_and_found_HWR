@@ -20,17 +20,17 @@ nav_order: 4
 ## Nam Tung Vu
 
 Contributions
-: Setup der Flask-Applikationsstruktur und Projektkonfiguration
-: Design und Implementierung der Datenbank-Modelle (SQLAlchemy) für User und Posts
-: Entwicklung der Authentifizierungs-Logik (Login, Registrierung, Session-Management)
-: Erstellung der JSON-API Endpunkte für den externen Datenzugriff
-: Implementierung der CRUD-Operationen im Backend (Create, Read, Update, Delete)
+: Backend-Setup (Struktur und Konfiguration)
+: Umsetzung der Backend-Logik und Session-Management (Registrierung, Login, Logout)
+: Datenbank-Anbindung und Modellierung der zentralen Modelle (User, Posts)
+: Routing und Verbindung zwischen Backend und Frontend
+: Backend-Funktionen für Posts inkl. Status-Logik (Anlegen, Anzeigen, Bearbeiten, Löschen)
 
 ## Suheib Abdolkadir Mohammed Saaid
 
 Contributions
-: Erstellung und Strukturierung aller Jinja2-Templates (HTML)
-: Integration von Bootstrap und Custom CSS für das Responsive Design
-: Implementierung der WTForms im Frontend inkl. Validierungs-Feedback
-: Gestaltung der Benutzeroberfläche für das Dashboard und die "Lost/Found"-Unterscheidung
-: Integration von Flash-Messages und UX-Verbesserungen (Navigation, Buttons)
+: Umsetzung und Strukturierung des Frontends
+: Styling und Responsive Design mit Bootstrap
+: Gestaltung der Benutzeroberfläche (Dashboard und Navigation)
+: Erstellung und Pflege der Projekt-Dokumentation
+
