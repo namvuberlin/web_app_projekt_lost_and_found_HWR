@@ -29,7 +29,9 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 
 ![student_login](assets/images/student_login.png)
 
- 
+### Student Dashboard
+![student_dashboard](assets/images/student_dashboard.png)
+
 
 ### Missing Items (Lost Posts)
 ![student_missingitems](assets/images/student_missingitems.png)
