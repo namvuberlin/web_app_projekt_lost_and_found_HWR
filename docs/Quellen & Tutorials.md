@@ -9,69 +9,61 @@ nav_order: 99
 ## Datenbank (SQLite)
 
 ### Grundlagen
-- [SQLite Tutorial for Beginners (YouTube)](PASTE_LINK_HERE) – nur die ersten ~20 Minuten
-- [W3Schools SQL Tutorial](PASTE_LINK_HERE) – CREATE TABLE Syntax
-- [Python sqlite3 — Official Documentation](PASTE_LINK_HERE) – vollständig, aber trocken
-- [Real Python: SQLite Tutorial](PASTE_LINK_HERE) – verständlicher erklärt
+- [SQLite Tutorial for Beginners (YouTube)](https://www.youtube.com/watch?v=byHcYRpMgI4)
+- [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) 
+- [Python sqlite3 — Official Documentation](https://docs.python.org/3/library/sqlite3.html) 
+- [Real Python: SQLite Tutorial](https://realpython.com/python-sqlite-sqlalchemy/) 
 
 ### Spezielle Probleme
-- [Stack Overflow: SQLite Foreign Keys](PASTE_LINK_HERE) – Foreign Keys Erklärung
-- [SQLite Tutorial (Foreign Keys / Constraints)](PASTE_LINK_HERE) – alternative Erklärung
-- [Stack Overflow: sqlite3 row_factory](PASTE_LINK_HERE) – dict statt tuple
+- [Stack Overflow: SQLite Foreign Keys](https://stackoverflow.com/questions/1884818/how-do-i-add-a-foreign-key-to-an-existing-sqlite-table)
+- [SQLite Tutorial (Foreign Keys / Constraints)](https://www.sqlitetutorial.net/sqlite-foreign-key/) 
+- [Stack Overflow: sqlite3 row_factory](https://stackoverflow.com/questions/3300464/how-can-i-get-dict-from-sqlite-query)
 
 ## Bootstrap & CSS
 
 ### Videos
-- [Bootstrap 5 Tutorial – Complete Course (YouTube)](PASTE_LINK_HERE) – erste ~30 Minuten
-- [Bootstrap Grid System Explained (YouTube)](PASTE_LINK_HERE) – col-md-4 etc.
-- [CSS Flexbox vs Grid (YouTube/Artikel)](PASTE_LINK_HERE)
+- [Bootstrap 5 Tutorial – Complete Course (YouTube)](https://www.youtube.com/watch?v=4sosXZsdy-s) 
+- [Bootstrap Grid System Explained (YouTube)](https://www.youtube.com/watch?v=QyZPEwgogA4)
+- [CSS Flexbox vs Grid (YouTube/Artikel)](https://www.youtube.com/watch?v=3elGSZSWTbM)
 
 ### Beispiele/Tools
-- [Bootstrap Examples (Cards)](PASTE_LINK_HERE) – Cards-Beispiel als Vorlage
-- [W3Schools Bootstrap Tutorial](PASTE_LINK_HERE)
-- [CSS Gradient Generator](PASTE_LINK_HERE) – Gradient generiert und übernommen
-
-### Hilfe (Stack Overflow)
-- [CSS Hover Effects (Stack Overflow)](PASTE_LINK_HERE) – Karten-Animation
-- [Flask Templates (Stack Overflow)](PASTE_LINK_HERE) – Template-Probleme
+- [Bootstrap Examples (Cards)](https://getbootstrap.com/docs/5.1/examples/) 
+- [W3Schools Bootstrap Tutorial](https://www.w3schools.com/bootstrap5/)
+- [CSS Gradient Generator](https://cssgradient.io/)
 
 ## Flask
 
 ### Tutorials
-- [Flask Mega-Tutorial](PASTE_LINK_HERE)
-- [Corey Schafer – Flask Tutorial (YouTube Playlist)](PASTE_LINK_HERE)
-- [Flask Documentation](PASTE_LINK_HERE) – z. B. url_for(), Templates
+- [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+- [Corey Schafer – Flask Tutorial (YouTube Playlist)](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+- [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/) 
 
 ### Template-Probleme
-- [Jinja2 Template Documentation](PASTE_LINK_HERE) – extends / block
-- [Stack Overflow: Flask static files](PASTE_LINK_HERE) – CSS lädt nicht
-- [Flask url_for('static')](PASTE_LINK_HERE)
+- [Jinja2 Template Documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/) – extends / block
+- [Stack Overflow: Flask static files](https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask) – CSS lädt nicht
+- [Flask url_for('static')](https://stackoverflow.com/questions/7478366/create-dynamic-urls-in-flask-with-url-for)
 
 ## Authentication & Sessions
 
 ### Session / Login
-- [Flask Sessions Tutorial](PASTE_LINK_HERE)
-- [Stack Overflow: Flask session user_id](PASTE_LINK_HERE)
-- [Werkzeug Security / Password Hashing](PASTE_LINK_HERE)
-- [Stack Overflow: Flask redirect after login](PASTE_LINK_HERE)
+- [Flask Sessions Tutorial](https://pythonbasics.org/flask-sessions/)
+- [Stack Overflow: Flask session user_id](https://stackoverflow.com/questions/27611216/how-to-get-a-variable-from-the-url-in-flask)
 
 ## Flash Messages
-- [Flask Flash Messages (Docs)](PASTE_LINK_HERE)
-- [Stack Overflow: Flash categories](PASTE_LINK_HERE)
+- [Flask Flash Messages (Docs)](https://flask.palletsprojects.com/en/2.0.x/patterns/flashing/)
+- [Stack Overflow: Flash categories](https://stackoverflow.com/questions/34902378/where-do-i-get-the-flask-flash-categories)
 
 ## Weitere Hilfen
 
 ### Design-Inspiration
-- [Dribbble](PASTE_LINK_HERE)
-- [Bootstrap Templates](PASTE_LINK_HERE)
-- [Coolors](PASTE_LINK_HERE)
+- [Dribbble](https://dribbble.com/tags/web_app)
+- [Bootstrap Templates](https://startbootstrap.com/themes)
+- [Coolors](https://coolors.co/)
 
 ### Allgemeine Programmier-Hilfe
-- [Stack Overflow](PASTE_LINK_HERE)
-- [W3Schools](PASTE_LINK_HERE)
-- [MDN Web Docs](PASTE_LINK_HERE)
-- [Python.org Docs](PASTE_LINK_HERE)
+- [Stack Overflow](https://stackoverflow.com/)
+- [W3Schools](https://www.w3schools.com/)
+- [Python.org Docs](https://docs.python.org/3/)
 
 ## ChatGPT Verlauf
-- ChatGPT-Unterstützung für Debugging, Strukturierung und Textarbeit im Projekt (keine öffentlichen Links).
 
