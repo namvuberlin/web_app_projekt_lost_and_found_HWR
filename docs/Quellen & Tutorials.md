@@ -1,6 +1,5 @@
 ---
 title: Sources & Tutorials
-parent: Documentation
 nav_order: 99
 ---
 
