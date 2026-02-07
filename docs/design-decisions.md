@@ -21,7 +21,7 @@ nav_order: 3
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: **Decided**
 
 Updated
 : DD-MMM-YYYY
@@ -51,7 +51,7 @@ Wir unterscheiden zwei Rollen:
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: **Decided**
 
 Updated
 : DD-MMM-YYYY
@@ -86,7 +86,7 @@ Begründung:
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: **Decided**
 
 Updated
 : DD-MMM-YYYY
@@ -121,7 +121,7 @@ Vorteil: klare Nutzerführung, weniger Verwirrung.
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: **Decided**
 
 Updated
 : DD-MMM-YYYY
@@ -159,7 +159,7 @@ Vorteile:
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: **Decided**
 
 Updated
 : DD-MMM-YYYY
@@ -203,7 +203,7 @@ Wir haben diese Optionen verglichen:
 ### Meta
 
 Status
-: **Work in progress** - Decided - Obsolete
+: **Decided**
 
 Updated
 : DD-MMM-YYYY
@@ -234,7 +234,7 @@ Status
 : **Decided**
 
 Updated
-: 03-Feb-2026
+: DD-MMM-YYYY
 
 ### Problem statement
 
