@@ -1,5 +1,5 @@
 ---
-title: Sources & Tutorials
+title: Quellen & Tutorials
 nav_order: 99
 ---
 
