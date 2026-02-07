@@ -21,7 +21,7 @@ nav_order: 4
 
 Contributions
 : Backend-Setup (Struktur und Konfiguration)
-: Umsetzung der Backend-Logik und Session-Management (Registrierung, Login, Logout)
+: Session-Management (Registrierung, Login, Logout)
 : Datenbank-Anbindung und Modellierung der zentralen Modelle (User, Posts)
 : Routing und Verbindung zwischen Backend und Frontend
 : Backend-Funktionen für Posts inkl. Status-Logik (Anlegen, Anzeigen, Bearbeiten, Löschen)
