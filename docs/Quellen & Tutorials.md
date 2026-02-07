@@ -33,11 +33,12 @@ nav_order: 99
 - [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 - [Corey Schafer – Flask Tutorial (YouTube Playlist)](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
-- [Flask-SQLAlchemy - CRUD + Setup](https://www.youtube.com/watch?v=a1Ykeqj_D_M)   
+- [Flask-SQLAlchemy - CRUD + Setup](https://www.youtube.com/watch?v=a1Ykeqj_D_M)
+- [Microsoft Learn: Flask Tutorial mit Visual Studio](https://learn.microsoft.com/de-de/visualstudio/python/learn-flask-visual-studio-step-01-project-solution?view=visualstudio) 
 
 ### Template-Probleme
 - [Jinja2 Template Documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/)
-- [Flask url_for('static')](https://stackoverflow.com/questions/7478366/create-dynamic-urls-in-flask-with-url-for)
+- [Flask url_for](https://stackoverflow.com/questions/7478366/create-dynamic-urls-in-flask-with-url-for)
 
 ## Authentication & Sessions
 
