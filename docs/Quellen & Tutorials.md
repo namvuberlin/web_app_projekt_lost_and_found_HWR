@@ -19,11 +19,13 @@ nav_order: 99
 ### Videos
 - [Bootstrap 5 Tutorial – Complete Course (YouTube)](https://www.youtube.com/watch?v=4sosXZsdy-s) 
 - [Bootstrap Grid System Explained (YouTube)](https://www.youtube.com/watch?v=QyZPEwgogA4)
+- [Bootstrap 5 Crash Course (YouTube, Net Ninja)](https://www.youtube.com/watch?v=O_9u1P5YjVc)
 
 ### Beispiele/Tools
 - [Bootstrap Examples (Cards)](https://getbootstrap.com/docs/5.1/examples/) 
 - [W3Schools Bootstrap Tutorial](https://www.w3schools.com/bootstrap5/)
 - [CSS Gradient Generator](https://cssgradient.io/)
+- [Bootstrap GitHub Repository (Quick start, Releases, Source)](https://github.com/twbs/bootstrap)
 
 ## Flask
 
