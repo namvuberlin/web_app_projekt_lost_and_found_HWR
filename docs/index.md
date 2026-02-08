@@ -19,18 +19,25 @@ https://namvuberlin.github.io/web_app_projekt_lost_and_found_HWR/ ]
 ### [Nam Tung Vu]
 
 About
-: Some info about Jane
+: Backend-Setup (Struktur und Konfiguration)
+Session-Management (Registrierung, Login, Logout)
+Datenbank-Anbindung und Modellierung der zentralen Modelle (User, Posts)
+Routing und Verbindung zwischen Backend und Frontend
+Backend-Funktionen für Posts inkl. Status-Logik (Anlegen, Anzeigen, Bearbeiten, Löschen)
 
 Matr.-Nr.
-: 1234567
+: 77211970265
 
 ### [Suheib Abdolkadir Mohammed Saaid]
 
 About
-: Some info about Joe
+: Umsetzung und Strukturierung des Frontends
+Styling und Responsive Design mit Bootstrap
+Gestaltung der Benutzeroberfläche (Dashboard und Navigation)
+Erstellung und Pflege der Projekt-Dokumentation
 
 Matr.-Nr.
-: 1234567
+: 77211911910
 
 ## Eidesstattliche Erklärung
 
