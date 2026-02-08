@@ -57,7 +57,6 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 ## Admin UI
 
  
-
 ### Admin Login
 
 ![admin_login](assets/images/admin_login.png)
