@@ -3,11 +3,11 @@ title: Home
 nav_order: 0
 ---
 
-# [Lost & Found HWR]
+# Lost & Found HWR
 
-[Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
-Sowohl Finder als auch *Suchende* können sich anmelden und Posts erstellen.
-https://namvuberlin.github.io/web_app_projekt_lost_and_found_HWR/ ]
+Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
+Sowohl Finder als auch Suchende können sich anmelden und Posts erstellen.
+https://namvuberlin.github.io/web_app_projekt_lost_and_found_HWR/ 
 
 ## Team members
 
