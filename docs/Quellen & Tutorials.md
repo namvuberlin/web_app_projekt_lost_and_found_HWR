@@ -63,3 +63,5 @@ nav_order: 99
 
 ## ChatGPT Verlauf
 
+- [ChatGPT Verlauf – Nam](assets/pdf/ChatGPT_Wepp_App_Nam.pdf)
+- [ChatGPT Verlauf – Suheil](assets/pdf/ChatGPT_Wepp_App_Suheilb.pdf)
