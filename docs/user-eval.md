@@ -4,10 +4,10 @@ nav_order: 4
 ---
 
 {: .label }
-[Jane Dane]
+[Suheib]
 
 {: .no_toc }
-# User evaluation
+# User Evaluation
 
 <details open markdown="block">
 {: .text-delta }
@@ -16,30 +16,68 @@ nav_order: 4
 {: toc }
 </details>
 
-## 01: [Title]
+## 01: Usability-Evaluation – Studentischer Workflow
 
 ### Meta
 
 Status
-: **Work in progress** - Done - Obsolete
+: **Abgeschlossen**
 
 Updated
-: DD-MMM-YYYY
-
-### Goal
-
-[Describe the goal of this evaluation, for example as a research question like: "How long does it take to register a new account and what is the drop-out rate?"]
-
-### Method
-
-[Describe how you proceed to achieve your evaluation goal. Be as specific as possible: others should be able to replicate your evaluation by following the description on this section.]
-
-### Results
-
-[Present the main results of your evaluation, for example: "On average, users need 3 min to register. The drop-out rate was 70%. Users that didn't complete provided the following reasons: ..."]
-
-### Implications
-
-[What did you learn from this evaluation and what will you change to improve? Example: "We aim to decrease the drop-out rate by not asking for a birth date. We will re-run this evaluation to measure the impact."]
+: 08-Feb-2026
 
 ---
+
+### Ziel
+
+Ziel dieser Evaluation war es, die Benutzerfreundlichkeit und Verständlichkeit des zentralen Workflows für Studierende in der Lost-&-Found-Webanwendung zu untersuchen.
+
+Im Fokus standen dabei folgende Fragestellungen:
+- Wie einfach können sich Studierende registrieren und anmelden?
+- Ist das Erstellen von „Lost“- und „Found“-Posts intuitiv möglich?
+- Sind Dashboard und Navigation ohne vorherige Erklärung verständlich?
+
+---
+
+### Methode
+
+Es wurde ein qualitativer Usability-Test mit **3 Studierenden** durchgeführt, die nicht an der Entwicklung des Projekts beteiligt waren.
+
+Die Teilnehmenden erhielten folgende Aufgaben:
+1. Registrierung eines neuen Benutzerkontos
+2. Anmeldung in der Anwendung
+3. Navigation zum Dashboard
+4. Erstellen eines vermissten Gegenstands (Lost Post)
+5. Anzeigen vorhandener gefundener Gegenstände (Found Posts)
+6. Abmeldung aus der Anwendung
+
+Während der Durchführung wurden die Nutzer beobachtet.  
+Es wurden keine Hilfestellungen gegeben, außer wenn ein Nutzer nicht weiterkam.  
+Nach Abschluss der Aufgaben wurde mündliches Feedback eingeholt.
+
+---
+
+### Ergebnisse
+
+- Alle Teilnehmenden konnten sich erfolgreich registrieren und anmelden.
+- Die durchschnittliche Dauer für Registrierung und Login lag bei **unter 2 Minuten**.
+- Die Navigation innerhalb des Dashboards wurde als **übersichtlich und intuitiv** bewertet.
+- Das Erstellen eines Lost-Posts konnte von allen Nutzern ohne Unterstützung durchgeführt werden.
+- Positiv hervorgehoben wurden das klare Layout sowie die Trennung zwischen „Lost“ und „Found“ Posts.
+
+Beobachtete Verbesserungspunkte:
+- Ein Nutzer empfand den „Create Post“-Button als zu wenig hervorgehoben.
+- Zwei Nutzer wünschten sich eine klarere Erklärung des Unterschieds zwischen verlorenen und gefundenen Gegenständen.
+
+---
+
+### Konsequenzen / Verbesserungen
+
+Die Evaluation zeigte, dass der studentische Workflow insgesamt gut verständlich und benutzerfreundlich ist.
+
+Basierend auf dem Feedback sind folgende Verbesserungen geplant:
+- Stärkere visuelle Hervorhebung zentraler Aktionen (z. B. „Create Post“).
+- Ergänzung kurzer erklärender Texte zur Unterscheidung von Lost- und Found-Posts.
+- Anzeige von Bestätigungsnachrichten nach dem Erstellen eines Posts.
+
+Insgesamt bestätigt die Evaluation, dass die Anwendung die gesetzten Usability-Ziele erfüllt und eine solide Grundlage für zukünftige Erweiterungen bietet.
