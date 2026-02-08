@@ -11,7 +11,7 @@ https://namvuberlin.github.io/web_app_projekt_lost_and_found_HWR/
 
 ## Team members
 
-### [Nam Tung Vu]
+### Nam Tung Vu
 
 About
 : Backend-Setup (Struktur und Konfiguration)
@@ -23,7 +23,7 @@ Backend-Funktionen für Posts inkl. Status-Logik (Anlegen, Anzeigen, Bearbeiten,
 Matr.-Nr.
 : 77211970265
 
-### [Suheib Abdolkadir Mohammed Saaid]
+### Suheib Abdolkadir Mohammed Saaid
 
 About
 : Umsetzung und Strukturierung des Frontends
