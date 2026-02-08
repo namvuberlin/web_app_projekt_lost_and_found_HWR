@@ -83,37 +83,3 @@ For a quick reference of the markdown syntax, visit [this page](https://github.c
 ![admin_editpost](assets/images/admin_editpost.png)
 
 
-## Callouts
-
-{: .info }
-> This is an info callout.
-
-{: .tip }
-> This is a tip callout.
-
-{: .attention }
-> This is an attention callout.
-
-> {: .download }
-> This is a download callout.
-
-## Labels
-
-{: .label }
-[Default label]
-
-{: .label .label-green }
-[Green label]
-
-{: .label .label-red }
-[Red label]
-
-## Mermaid.js
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-```
-
-Visit the [Mermaid docs](https://mermaid.js.org/intro/) for a thorough description of the charting possibilities.
