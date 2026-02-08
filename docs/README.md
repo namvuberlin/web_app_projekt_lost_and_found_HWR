@@ -26,8 +26,8 @@ Alle Details zur Projektidee, der Value Proposition, den UI-Entwürfen und unser
 
 ### Virtuelle Umgebung erstellen & aktivieren
 * python -m venv .venv
-*  .\.venv\Scripts\Activate.ps1 (PowerShell)
-* .\venv\Scripts\activate.bat (Command Prompt)
+* PowerShell:  .\.venv\Scripts\Activate.ps1 
+* Command Prompt: .\venv\Scripts\activate.bat
   
 ### Abhängigkeiten installieren
 * pip install -r requirements.txt
