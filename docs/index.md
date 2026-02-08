@@ -3,11 +3,6 @@ title: Home
 nav_order: 0
 ---
 
-{: .attention }
-> Any text enclosed by `[ ]` are placeholders, including the opening and closing brackets.
->
-> You may delete this `attention` box.
-
 # [Lost & Found HWR]
 
 [Lost & Found HWR ist eine digitale Anzeigetafel für Studierende der HWR Berlin.
